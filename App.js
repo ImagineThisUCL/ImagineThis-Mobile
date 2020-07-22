@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import base from "./assets/baseStyle"
 import SetUpView from "./components/views/SetUp"
+import SetUpInlineView from "./components/views/SetUpInline"
 
 function HomeScreen({ navigation }) {
     return (
@@ -19,6 +20,10 @@ function HomeScreen({ navigation }) {
                 title="Go to SetUp screen"
                 onPress={() => navigation.navigate('SetUp')}
             />
+            <Button
+                title="Go to SetUp screen with inline styles"
+                onPress={() => navigation.navigate('SetUpInline')}
+            />
         </View>
     )
 }
@@ -31,6 +36,7 @@ export default function App() {
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="SetUp" component={SetUpView} />
+                <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
             </Stack.Navigator>
         </NavigationContainer>
     )
