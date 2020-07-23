@@ -1,8 +1,10 @@
 import {
     View, 
-    Text,
-    Button } from "react-native"
+    Text } from "react-native"
 import React, { Component } from "react"
+import Button from "../reusables/Button"
+
+import base from "../../assets/baseStyle"
 
 class SetUpInline extends Component {
     render() {
@@ -21,8 +23,16 @@ class SetUpInline extends Component {
                     If you consent to this click Save.
                 </Text>
                 <View style={{flexDirection: "row", justifyContent: "space-between"}}>
-                    <Button title="No Thanks"/>
-                    <Button title="SAVE"/>
+                    <Button
+                        style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                        textStyle={{color: "#ffffff"}}>
+                        No Thanks
+                    </Button>
+                    <Button
+                        style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                        textStyle={{color: "#ffffff"}}>
+                        Save
+                    </Button>
                 </View>
             </View>
         )

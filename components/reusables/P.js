@@ -1,8 +1,7 @@
 import React, { Component } from "react"
-import { StyleSheet } from "react-native"
-import Text from "view/reusable/Text"
+import { StyleSheet, Text } from "react-native"
 
-import base from "assets/baseStyle"
+import base from "../../assets/baseStyle"
 
 const styles = StyleSheet.create({
   default: {
@@ -54,6 +53,9 @@ const styles = StyleSheet.create({
   dark: {
     color: base.colors.darkSecondary
   },
+  white: {
+    color: base.colors.white
+  },
   bottomSeparator: {
     borderBottomWidth: 1,
     borderBottomColor: base.colors.greyLight,
@@ -79,6 +81,7 @@ export default class P extends Component {
     if (this.props.red) styleList.push(styles.red)
     if (this.props.grey) styleList.push(styles.grey)
     if (this.props.dark) styleList.push(styles.dark)
+    if (this.props.white) styleList.push(styles.white)
     if (this.props.bottomSeparator) styleList.push(styles.bottomSeparator)
 
     return (

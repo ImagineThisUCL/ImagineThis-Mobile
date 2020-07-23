@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import base from "./assets/baseStyle"
 import SetUpView from "./components/views/SetUp"
 import SetUpInlineView from "./components/views/SetUpInline"
+import SetUpComponentsView from "./components/views/SetUpComponents"
+import Button from "./components/reusables/Button"
 
 function HomeScreen({ navigation }) {
     return (
@@ -17,13 +19,23 @@ function HomeScreen({ navigation }) {
                 </Text>
             </View>
             <Button
-                title="Go to SetUp screen"
                 onPress={() => navigation.navigate('SetUp')}
-            />
+                style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                textStyle={{color: "#ffffff"}}>
+                Go to SetUp screen
+            </Button>
             <Button
-                title="Go to SetUp screen with inline styles"
                 onPress={() => navigation.navigate('SetUpInline')}
-            />
+                style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                textStyle={{color: "#ffffff"}}>
+                Go to SetUp screen with inline styles
+            </Button>
+            <Button
+                onPress={() => navigation.navigate('SetUpComponents')}
+                style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                textStyle={{color: "#ffffff"}}>
+                Go to SetUp screen with components
+            </Button>
         </View>
     )
 }
@@ -37,6 +49,7 @@ export default function App() {
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="SetUp" component={SetUpView} />
                 <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
+                <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
             </Stack.Navigator>
         </NavigationContainer>
     )
