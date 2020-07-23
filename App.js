@@ -5,15 +5,16 @@ import SetUpView from "./components/views/SetUp"
 import SetUpInlineView from "./components/views/SetUpInline"
 import SetUpComponentsView from "./components/views/SetUpComponents"
 import HomeView from "./components/views/Home"
-import NetworkView from "./components/views/Home"
-import ContactView from "./components/views/Home"
-import SettingsView from "./components/views/Home"
-import WellbeingView from "./components/views/Home"
+import NetworkView from "./components/views/Network"
+import ContactView from "./components/views/Contact"
+import SettingsView from "./components/views/Settings"
+import WellbeingView from "./components/views/Wellbeing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
 
 const Tab = createBottomTabNavigator();
 
+// Bottom tab navigation is defined here and then nested in a Stack.Navigator
 function HomeScreen() {
     return (
         <Tab.Navigator
