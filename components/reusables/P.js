@@ -60,9 +60,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: base.colors.greyLight,
     paddingBottom: base.padding / 2
-  },
-
-
+  }
 })
 
 export default class P extends Component {
@@ -84,8 +82,6 @@ export default class P extends Component {
     if (this.props.dark) styleList.push(styles.dark)
     if (this.props.white) styleList.push(styles.white)
     if (this.props.bottomSeparator) styleList.push(styles.bottomSeparator)
-    styleList.push({fontSize: this.props.fontSize})
-    styleList.push({fontFamily: this.props.fontFamily})
 
     return (
       <Text {...this.props} style={[...styleList, this.props.style]}/>
