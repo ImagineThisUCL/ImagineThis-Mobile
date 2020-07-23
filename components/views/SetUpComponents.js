@@ -1,4 +1,4 @@
-import { View } from "react-native"
+import { View, ScrollView } from "react-native"
 import React, { Component } from "react"
 import P from "../reusables/P"
 import Button from "../reusables/Button"
@@ -8,7 +8,7 @@ import base from "../../assets/baseStyle"
 class SetUpComponents extends Component {
     render() {
         return (
-            <View style={{flex: 1, padding: 10, backgroundColor: "#11287B"}}>
+            <ScrollView style={{flex: 1, padding: 10, backgroundColor: "#11287B"}}>
                 <P style={{color: "#ffffff", fontSize: 21}}>
                     CarerCare V0120-21: Set Up
                 </P>
@@ -34,7 +34,7 @@ class SetUpComponents extends Component {
                         Save
                     </Button>
                 </View>
-            </View>
+            </ScrollView>
         )
     }
 }
