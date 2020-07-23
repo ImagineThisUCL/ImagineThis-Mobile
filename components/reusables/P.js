@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import { StyleSheet } from "react-native"
-import Text from "view/reusable/Text"
+import {Text} from "react-native"
 
-import base from "assets/baseStyle"
+import base from "../../assets/baseStyle"
 
 const styles = StyleSheet.create({
   default: {
@@ -58,13 +58,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: base.colors.greyLight,
     paddingBottom: base.padding / 2
-  }
+  },
+
+
 })
 
-export default class P extends Component {
+class P extends Component {
   render() {
     let styleList = [styles.default]
-
     if (this.props.noMargin) styleList.push(styles.noMargin)
     if (this.props.topMargin) styleList.push(styles.topMargin)
     if (this.props.smallMargin) styleList.push(styles.smallMargin)
@@ -80,9 +81,13 @@ export default class P extends Component {
     if (this.props.grey) styleList.push(styles.grey)
     if (this.props.dark) styleList.push(styles.dark)
     if (this.props.bottomSeparator) styleList.push(styles.bottomSeparator)
+    styleList.push({fontSize: this.props.fontSize})
+    styleList.push({fontFamily: this.props.fontFamily})
 
     return (
-      <Text {...this.props} style={[...styleList, this.props.style]} />
+      <Text {...this.props} style={[...styleList, this.props.style]}/>
     )
   }
 }
+
+export default P;
