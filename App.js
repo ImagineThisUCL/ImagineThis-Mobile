@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import SetUpView from "./components/views/SetUp"
 import SetUpInlineView from "./components/views/SetUpInline"
 import SetUpComponentsView from "./components/views/SetUpComponents"
+import FormComponentsView from "./components/views/FormComponents"
 import HomeView from "./components/views/Home"
 import NetworkView from "./components/views/Network"
 import ContactView from "./components/views/Contact"
@@ -29,15 +30,15 @@ function HomeScreen() {
                     paddingBottom: 2
                 },
             }}>
-            <Tab.Screen 
-                name="Network" 
+            <Tab.Screen
+                name="Network"
                 component={NetworkView}
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name="ios-contacts" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Well-being"
                 component={WellbeingView}
                 options={{
@@ -45,15 +46,15 @@ function HomeScreen() {
                         <Ionicons name="ios-heart" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Home"
-                component={HomeView} 
+                component={HomeView}
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name="ios-home" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Contact"
                 component={ContactView}
                 options={{
@@ -61,7 +62,7 @@ function HomeScreen() {
                         <Ionicons name="ios-mail" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Settings"
                 component={SettingsView}
                 options={{
@@ -79,13 +80,14 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen 
-                    name="Home" 
-                    component={HomeScreen} 
+                <Stack.Screen
+                    name="Home"
+                    component={HomeScreen}
                     options={{headerShown: false}}/>
                 <Stack.Screen name="SetUp" component={SetUpView} />
                 <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
                 <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
+                <Stack.Screen name="FormComponents" component={FormComponentsView} />
             </Stack.Navigator>
         </NavigationContainer>
     )
