@@ -11,6 +11,7 @@ import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
+import { StyleSheet, Text, SafeAreaView, StatusBar} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,15 +30,15 @@ function HomeScreen() {
                     paddingBottom: 2
                 },
             }}>
-            <Tab.Screen 
-                name="Network" 
+            <Tab.Screen
+                name="Network"
                 component={NetworkView}
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name="ios-contacts" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Well-being"
                 component={WellbeingView}
                 options={{
@@ -45,15 +46,15 @@ function HomeScreen() {
                         <Ionicons name="ios-heart" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Home"
-                component={HomeView} 
+                component={HomeView}
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name="ios-home" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Contact"
                 component={ContactView}
                 options={{
@@ -61,7 +62,7 @@ function HomeScreen() {
                         <Ionicons name="ios-mail" color={color} size={size} />
                     )
                 }}/>
-            <Tab.Screen 
+            <Tab.Screen
                 name="Settings"
                 component={SettingsView}
                 options={{
@@ -77,16 +78,23 @@ const Stack = createStackNavigator();
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen 
-                    name="Home" 
-                    component={HomeScreen} 
-                    options={{headerShown: false}}/>
-                <Stack.Screen name="SetUp" component={SetUpView} />
-                <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
-                <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <>
+        <SafeAreaView style={{flex: 0, backgroundColor: '#ffffff'}}/>
+        <SafeAreaView style={{flex: 1, backgroundColor: "#D5E6EC"}}>
+
+            <NavigationContainer>
+                <Stack.Navigator initialRouteName="Home">
+                    <Stack.Screen
+                        name="Home"
+                        component={HomeScreen}
+                        options={{headerShown: false}}/>
+                    <Stack.Screen name="SetUp" component={SetUpView} />
+                    <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
+                    <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
+                </Stack.Navigator>
+            </NavigationContainer>
+
+        </SafeAreaView>
+        </>
     )
 }
