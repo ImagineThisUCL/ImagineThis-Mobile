@@ -13,6 +13,7 @@ import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
+import { StyleSheet, Text, SafeAreaView, StatusBar} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -79,18 +80,23 @@ const Stack = createStackNavigator();
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen
-                    name="Home"
-                    component={HomeScreen}
-                    options={{headerShown: false}}/>
-                <Stack.Screen name="SetUp" component={SetUpView} />
-                <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
-                <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
-                <Stack.Screen name="FormComponents" component={FormComponentsView} />
-                <Stack.Screen name="FormComponentsLibrary" component={FormComponentsLibraryView} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <>
+        <SafeAreaView style={{flex: 0, backgroundColor: '#ffffff'}}/>
+        <SafeAreaView style={{flex: 1, backgroundColor: "#D5E6EC"}}>
+
+            <NavigationContainer>
+                <Stack.Navigator initialRouteName="Home">
+                    <Stack.Screen
+                        name="Home"
+                        component={HomeScreen}
+                        options={{headerShown: false}}/>
+                    <Stack.Screen name="SetUp" component={SetUpView} />
+                    <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
+                    <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
+                </Stack.Navigator>
+            </NavigationContainer>
+
+        </SafeAreaView>
+        </>
     )
 }
