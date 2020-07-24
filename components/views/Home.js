@@ -53,6 +53,12 @@ class Home extends Component {
                     textStyle={{color: "#ffffff"}}>
                     Go to Form View
                 </Button>
+                <Button
+                    onPress={() => this.props.navigation.navigate('FormComponentsLibrary')}
+                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                    textStyle={{color: "#ffffff"}}>
+                    Go to Form View (Library)
+                </Button>
             </View>
         )
     }
