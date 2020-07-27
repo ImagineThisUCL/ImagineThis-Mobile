@@ -4,7 +4,7 @@ import { View, ScrollView, TextInput, Text} from "react-native"
 import React, { Component } from "react"
 import P from "../reusables/P"
 import Button from "../reusables/Button"
-import { Input } from 'react-native-elements';
+import { Input, Card, ListItem, Icon } from 'react-native-elements';
 
 import base from "../../assets/baseStyle"
 
@@ -19,12 +19,13 @@ class FormComponents extends Component {
                     {"\n\n"}
                     Do this initially with your carer support worker.  Once saved you can change these at any time
                     {"\n\n"}
-                    {"\n\n"}
                     Who do like to talk to?
                 </P>
+
+                <Card>
                 <View style={{flex:1, flexDirection: "row"}}>
                     <View syle={{flex:1}}>
-                        <Text style={{color: "#ffffff", fontSize: 21}}>
+                        <Text style={{color: "#000000", fontSize: 21}}>
                         Name:
                         </Text>
                     </View>
@@ -37,23 +38,25 @@ class FormComponents extends Component {
                           />
                     </View>
                 </View>
-                <View style={{flex:1, flexDirection: "row"}}>
-                    <View syle={{flex:1}}>
-                        <Text style={{color: "#ffffff", fontSize: 21}}>
-                        Contact:
-                        </Text>
-                    </View>
-                    <View style={{flex:3}}>
-                        <Input
-                          placeholder='Support Worker'
-                          labelStyle={{color: "#ffffff"}}
-                          containerStyle={{color: "#ffffff"}}
-                          inputStyle={{color: "#ffffff"}}
-                          />
-                    </View>
-                </View>
+                  <View style={{flex:1, flexDirection: "row"}}>
+                      <View syle={{flex:1}}>
+                          <Text style={{color: "#000000", fontSize: 21}}>
+                          Contact:
+                          </Text>
+                      </View>
+                      <View style={{flex:3}}>
+                          <Input
+                            placeholder='Support Worker'
+                            labelStyle={{color: "#ffffff"}}
+                            containerStyle={{color: "#ffffff"}}
+                            inputStyle={{color: "#ffffff"}}
+                            />
+                      </View>
+                  </View>
+                </Card>
 
                 <P style={{color: "#ffffff", fontSize: 21}}>
+                    {"\n\n"}
                     The name you use for texts:
                 </P>
                 <View style={{flexDirection: "row", justifyContent: "space-between"}}>
