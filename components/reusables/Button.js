@@ -4,7 +4,8 @@ import React, {
 import {
     StyleSheet,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
+    View,
 } from "react-native"
 
 import base from "../../assets/baseStyle"
@@ -13,11 +14,14 @@ const styles = StyleSheet.create({
     button: {
         marginBottom: base.margin,
         paddingHorizontal: base.padding*2,
-        paddingVertical: base.padding
+        paddingVertical: base.padding,
     },
     text: {
-        fontSize: base.font.medium
-    }
+        fontSize: base.font.medium,
+    },
+    wrapper: {
+        flexDirection: "row",
+    },
 })
 
 export default class Button extends Component {
@@ -26,14 +30,16 @@ export default class Button extends Component {
         let textStyleList = [styles.text]
 
         return (
-            <TouchableOpacity 
-                {...this.props} 
-                style={[...buttonStyleList, this.props.style]}>
-                <Text
-                    style={[...textStyleList, this.props.textStyle]}>
-                    {this.props.children}
-                </Text>
-            </TouchableOpacity>
+            <View style={styles.wrapper}>
+                <TouchableOpacity 
+                    {...this.props} 
+                    style={[...buttonStyleList, this.props.style]}>
+                    <Text
+                        style={[...textStyleList, this.props.textStyle]}>
+                        {this.props.children}
+                    </Text>
+                </TouchableOpacity>
+            </View>
         )
     }
 }
