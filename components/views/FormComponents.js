@@ -23,36 +23,36 @@ class FormComponents extends Component {
                 </P>
 
                 <Card>
-                <View style={{flex:1, flexDirection: "row"}}>
-                    <View syle={{flex:1}}>
-                        <Text style={{color: "#000000", fontSize: 21}}>
-                        Name:
-                        </Text>
+                    <View style={{flex:1, flexDirection: "row"}}>
+                        <View syle={{flex:1}}>
+                            <Text style={{color: "#000000", fontSize: 21}}>
+                            Name:
+                            </Text>
+                        </View>
+                        <View style={{flex:3}}>
+                            <Input
+                              placeholder='Support Worker'
+                              labelStyle={{color: "#ffffff"}}
+                              containerStyle={{color: "#ffffff"}}
+                              inputStyle={{color: "#ffffff"}}
+                              />
+                        </View>
                     </View>
-                    <View style={{flex:3}}>
-                        <Input
-                          placeholder='Support Worker'
-                          labelStyle={{color: "#ffffff"}}
-                          containerStyle={{color: "#ffffff"}}
-                          inputStyle={{color: "#ffffff"}}
-                          />
-                    </View>
-                </View>
-                  <View style={{flex:1, flexDirection: "row"}}>
-                      <View syle={{flex:1}}>
+                    <View style={{flex:1, flexDirection: "row"}}>
+                        <View syle={{flex:1}}>
                           <Text style={{color: "#000000", fontSize: 21}}>
                           Contact:
                           </Text>
-                      </View>
-                      <View style={{flex:3}}>
+                        </View>
+                        <View style={{flex:3}}>
                           <Input
                             placeholder='Support Worker'
                             labelStyle={{color: "#ffffff"}}
                             containerStyle={{color: "#ffffff"}}
                             inputStyle={{color: "#ffffff"}}
                             />
-                      </View>
-                  </View>
+                        </View>
+                    </View>
                 </Card>
 
                 <P style={{color: "#ffffff", fontSize: 21}}>
