@@ -16,7 +16,7 @@ import { StyleSheet, Text, SafeAreaView, StatusBar} from 'react-native';
 const Tab = createBottomTabNavigator();
 
 // Bottom tab navigation is defined here and then nested in a Stack.Navigator
-function HomeScreen() {
+function TabNavigationScreens() {
     return (
         <Tab.Navigator
             tabBarOptions={{
@@ -86,7 +86,7 @@ export default function App() {
                 <Stack.Navigator initialRouteName="Home">
                     <Stack.Screen
                         name="Home"
-                        component={HomeScreen}
+                        component={TabNavigationScreens}
                         options={{headerShown: false}}/>
                     <Stack.Screen name="SetUp" component={SetUpView} />
                     <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
