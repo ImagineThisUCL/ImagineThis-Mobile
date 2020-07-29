@@ -9,6 +9,7 @@ import NetworkView from "./components/views/Network"
 import ContactView from "./components/views/Contact"
 import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
+import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
 import { StyleSheet, Text, SafeAreaView, StatusBar} from 'react-native';
@@ -91,6 +92,7 @@ export default function App() {
                     <Stack.Screen name="SetUp" component={SetUpView} />
                     <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
                     <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
+                    <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
                 </Stack.Navigator>
             </NavigationContainer>
 

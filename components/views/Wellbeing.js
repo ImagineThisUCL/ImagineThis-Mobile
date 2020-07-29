@@ -1,6 +1,7 @@
 import { View, StyleSheet, Text } from "react-native"
 import React, { Component } from "react"
 import { StatusBar } from 'expo-status-bar'
+import Button from "../reusables/Button"
 
 import base from "../../assets/baseStyle"
 
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     }
 })
 
-class Wellbeing extends Component {
+export default class Wellbeing extends Component {
     render() {
         return (
             <View style={styles.container}>
@@ -26,8 +27,13 @@ class Wellbeing extends Component {
                 <Text style={styles.text}>
                     Wellbeing view
                 </Text>
+                <Button
+                    onPress={() => this.props.navigation.navigate('WeeklyConfirmWellbeing')}
+                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                    textStyle={{color: "#ffffff"}}>
+                    Go to Weekly Confirm Wellbeing
+                </Button>
             </View>
         )
     }
 }
-export default Wellbeing
