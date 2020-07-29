@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import SetUpView from "./components/views/SetUp"
 import SetUpInlineView from "./components/views/SetUpInline"
 import SetUpComponentsView from "./components/views/SetUpComponents"
-import FormComponentsView from "./components/views/FormComponents"
+import InformationPopulateView from "./components/views/InformationPopulate"
 import HomeView from "./components/views/Home"
 import NetworkView from "./components/views/Network"
 import ContactView from "./components/views/Contact"
@@ -92,7 +92,7 @@ export default function App() {
                     <Stack.Screen name="SetUp" component={SetUpView} />
                     <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
                     <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
-                    <Stack.Screen name="FormComponents" component={FormComponentsView} />
+                    <Stack.Screen name="InformationPopulate" component={InformationPopulateView} />
                 </Stack.Navigator>
             </NavigationContainer>
 

@@ -11,7 +11,7 @@ import { Feather } from '@expo/vector-icons';
 
 import base from "../../assets/baseStyle"
 
-class FormComponents extends Component {
+class InformationPopulate extends Component {
 
     render() {
 
@@ -79,4 +79,4 @@ class FormComponents extends Component {
         )
     }
 }
-export default FormComponents
+export default InformationPopulate
