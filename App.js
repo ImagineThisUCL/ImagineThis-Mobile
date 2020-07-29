@@ -12,7 +12,7 @@ import WellbeingView from "./components/views/Wellbeing"
 import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
-import { StyleSheet, Text, SafeAreaView, StatusBar} from 'react-native';
+import { StyleSheet, Text, SafeAreaView, StatusBar, Image } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -43,9 +43,14 @@ function TabNavigationScreens() {
                 name="Well-being"
                 component={WellbeingView}
                 options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="ios-heart" color={color} size={size} />
-                    )
+                    tabBarIcon: () => {
+                        return (
+                            <Image
+                                source={require('./assets/img/icon-heart.png')}
+                                style={{width: 22, height: 22}}
+                            />
+                        )
+                    },
                 }}/>
             <Tab.Screen
                 name="Home"
