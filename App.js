@@ -45,6 +45,7 @@ function TabNavigationScreens() {
                 options={{
                     tabBarIcon: () => {
                         return (
+                            /* Option a with require and asset in the img folder */
                             <Image
                                 source={require('./assets/img/icon-heart.png')}
                                 style={{width: 22, height: 22}}
@@ -56,9 +57,15 @@ function TabNavigationScreens() {
                 name="Home"
                 component={HomeView}
                 options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="ios-home" color={color} size={size} />
-                    )
+                    tabBarIcon: () => {
+                        return (
+                            /* Option b with uri */
+                            <Image
+                                source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Font_Awesome_5_solid_home.svg/270px-Font_Awesome_5_solid_home.svg.png'}}
+                                style={{width: 24, height: 22}}
+                            />
+                        )
+                    },
                 }}/>
             <Tab.Screen
                 name="Contact"
