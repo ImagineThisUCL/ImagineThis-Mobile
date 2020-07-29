@@ -1,10 +1,13 @@
 // Recreating: Information to populate messages
 
-import { View, ScrollView, TextInput, Text} from "react-native"
+import { View, ScrollView, Text, TextInput} from "react-native"
 import React, { Component } from "react"
 import P from "../reusables/P"
 import Button from "../reusables/Button"
-import { Input, Card, ListItem, Icon } from 'react-native-elements';
+import IconButton from "../reusables/IconButton"
+import InputField from "../reusables/InputField"
+import { Card } from 'react-native-elements';
+import { Feather } from '@expo/vector-icons';
 
 import base from "../../assets/baseStyle"
 
@@ -21,37 +24,30 @@ class FormComponents extends Component {
                     {"\n\n"}
                     Who do like to talk to?
                 </P>
-
-                <Card>
-                    <View style={{flex:1, flexDirection: "row"}}>
-                        <View syle={{flex:1}}>
-                            <Text style={{color: "#000000", fontSize: 21}}>
-                            Name:
-                            </Text>
-                        </View>
-                        <View style={{flex:3}}>
-                            <Input
-                              placeholder='Support Worker'
-                              labelStyle={{color: "#ffffff"}}
-                              containerStyle={{color: "#ffffff"}}
-                              inputStyle={{color: "#ffffff"}}
-                              />
-                        </View>
+                <Card containerStyle={{borderRadius: 7, margin: 0, padding: 10}}>
+                    <View style={{flexDirection: 'row'}}>
+                        <InputField
+                            placeholder='Name'
+                            inputContainerStyle={{borderWidth: 1, borderRadius: 5}}
+                            containerStyle={{flex:9}}
+                        />
+                        <IconButton
+                            icon={
+                                <Feather name="phone-call" size={24} color="black" />                            }
+                        />
                     </View>
-                    <View style={{flex:1, flexDirection: "row"}}>
-                        <View syle={{flex:1}}>
-                          <Text style={{color: "#000000", fontSize: 21}}>
-                          Contact:
-                          </Text>
-                        </View>
-                        <View style={{flex:3}}>
-                          <Input
-                            placeholder='Support Worker'
-                            labelStyle={{color: "#ffffff"}}
-                            containerStyle={{color: "#ffffff"}}
-                            inputStyle={{color: "#ffffff"}}
-                            />
-                        </View>
+                    <View style={{flexDirection: 'row', padding: 0}}>
+                        <InputField
+                            placeholder='Contact Number'
+                            inputContainerStyle={{borderWidth: 1, borderRadius: 5}}
+                            containerStyle={{flex:9}}
+                        />
+                    </View>
+                    <View style={{flexDirection: 'row'}}>
+                        <IconButton
+                            icon={
+                                <Feather name="plus-circle" size={24} color="black" />                            }
+                        />
                     </View>
                 </Card>
 
@@ -59,6 +55,14 @@ class FormComponents extends Component {
                     {"\n\n"}
                     The name you use for texts:
                 </P>
+
+                <View style={{flexDirection: 'row'}}>
+                    <InputField
+                        placeholder='Name'
+                        inputContainerStyle={{borderWidth: 1, borderRadius: 5, backgroundColor: "#ffffff"}}
+                    />
+                </View>
+
                 <View style={{flexDirection: "row", justifyContent: "space-between"}}>
                     <Button
                         style={{backgroundColor: "#ffffff", borderRadius: 25, marginTop: base.margin}}
