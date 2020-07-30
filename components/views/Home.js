@@ -47,6 +47,12 @@ class Home extends Component {
                     textStyle={{color: "#ffffff"}}>
                     Go to SetUp screen with components
                 </Button>
+                <Button
+                    onPress={() => this.props.navigation.navigate('InformationPopulate')}
+                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                    textStyle={{color: "#ffffff"}}>
+                    Go to Information Populate View
+                </Button>
             </View>
         )
     }
