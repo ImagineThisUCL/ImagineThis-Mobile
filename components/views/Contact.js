@@ -1,5 +1,6 @@
 import { View, StyleSheet, Text } from "react-native"
 import React, { Component } from "react"
+import Button from "../reusables/Button"
 import { StatusBar } from 'expo-status-bar'
 
 import base from "../../assets/baseStyle"
@@ -23,10 +24,18 @@ class Contact extends Component {
         return (
             <View style={styles.container}>
                 <StatusBar style="auto" />
-                <Text style={styles.text}>
-                    Contact view
-                </Text>
-            </View>
+                  <View>
+                    <Text style={styles.text}>
+                       Contact view
+                    </Text>
+                  </View>
+                  <Button
+                      onPress={() => this.props.navigation.navigate('Nudge')}
+                      style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                      textStyle={{color: "#ffffff"}}>
+                      Go to Nudge
+                  </Button>
+                  </View>
         )
     }
 }
