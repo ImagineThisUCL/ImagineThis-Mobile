@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
 export default class IconButton extends Component {
     render() {
         let buttonStyleList = [styles.button]
-        let textStyleList = [styles.text]
 
         return (
             <Button
@@ -28,7 +27,6 @@ export default class IconButton extends Component {
             //     //     source={require(this.props.iconName)}
             //     //     style={styles.ImageIconStyle}
             //     // />
-            //     <Ionicons {...this.props} />
             // </TouchableOpacity>
         )
     }
