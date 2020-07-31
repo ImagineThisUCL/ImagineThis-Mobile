@@ -11,6 +11,7 @@ import ContactView from "./components/views/Contact"
 import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
 import NudgeView from "./components/views/Nudge"
+import TrackingView from "./components/views/Tracking"
 import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
@@ -103,12 +104,13 @@ export default function App() {
                         name="Home"
                         component={TabNavigationScreens}
                         options={{headerShown: false}}/>
-                    <Stack.Screen name="SetUp" component={SetUpView} />
-                    <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
-                    <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
-                    <Stack.Screen name="InformationPopulate" component={InformationPopulateView} />
-                    <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
+                    <Stack.Screen name="Set Up" component={SetUpView} />
+                    <Stack.Screen name="Set Up Inline" component={SetUpInlineView} />
+                    <Stack.Screen name="Set Up Components" component={SetUpComponentsView} />
+                    <Stack.Screen name="Information Populate" component={InformationPopulateView} />
+                    <Stack.Screen name="Weekly Confirm Wellbeing" component={WeeklyConfirmWellbeingView} />
                     <Stack.Screen name="Nudge" component={NudgeView} />
+                    <Stack.Screen name="Tracking" component={TrackingView} />
                 </Stack.Navigator>
             </NavigationContainer>
 
