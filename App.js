@@ -16,6 +16,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
 import { StyleSheet, Text, SafeAreaView, StatusBar, Image } from 'react-native';
 
+import Empty from "./components/views/Empty"
+
 const Tab = createBottomTabNavigator();
 
 // Bottom tab navigation is defined here and then nested in a Stack.Navigator
@@ -109,6 +111,7 @@ export default function App() {
                     <Stack.Screen name="InformationPopulate" component={InformationPopulateView} />
                     <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
                     <Stack.Screen name="Nudge" component={NudgeView} />
+                    <Stack.Screen name="Empty" component={Empty} />
                 </Stack.Navigator>
             </NavigationContainer>
 

@@ -1,6 +1,6 @@
-import { 
-    StyleSheet, 
-    View, 
+import {
+    StyleSheet,
+    View,
     Text } from "react-native"
 import React, { Component } from "react"
 import Button from "../reusables/Button"
@@ -50,6 +50,7 @@ class SetUp extends Component {
                         No Thanks
                     </Button>
                     <Button
+                        onPress={() => this.props.navigation.navigate('Empty')}
                         style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
                         textStyle={{color: "#ffffff"}}>
                         Save
