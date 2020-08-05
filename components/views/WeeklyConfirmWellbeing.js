@@ -13,7 +13,7 @@ export default class WeeklyConfirmWellbeing extends Component {
                 <P style={{color: "#ffffff", fontSize: 21}}>
                     Over the past 7 days, rate how well you have felt.
                 </P>
-                <View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10}}>
+                <View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10, flexDirection: "row"}}>
                     <CustomSlider
                         minimumValue={0}
                         minimumTrackTintColor="#A4C8FF"
