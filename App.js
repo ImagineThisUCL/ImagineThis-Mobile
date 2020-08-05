@@ -12,9 +12,10 @@ import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
 import NudgeView from "./components/views/Nudge"
 import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
+import ReportForSharingView from "./components/views/ReportForSharing"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
-import { StyleSheet, Text, SafeAreaView, StatusBar, Image } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, StatusBar, Image } from 'react-native'
 
 const Tab = createBottomTabNavigator();
 
@@ -108,6 +109,7 @@ export default function App() {
                     <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
                     <Stack.Screen name="InformationPopulate" component={InformationPopulateView} />
                     <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
+                    <Stack.Screen name="ReportForSharing" component={ReportForSharingView} />
                     <Stack.Screen name="Nudge" component={NudgeView} />
                 </Stack.Navigator>
             </NavigationContainer>
