@@ -63,7 +63,6 @@ class InformationPopulate extends Component {
                         label='Name'
                         placeholder='e.g. Thomas'
                         inputContainerStyle={{borderWidth: 1, borderRadius: 5, backgroundColor: "#ffffff", paddingHorizontal: 5}}
-                        label='Test'
                         labelStyle={{color: "#ffffff", fontSize: 21}}
                     />
                 </View>
