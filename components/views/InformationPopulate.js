@@ -27,8 +27,9 @@ class InformationPopulate extends Component {
                 <Card containerStyle={{borderRadius: 7, margin: 0, padding: 10}}>
                     <View style={{flexDirection: 'row'}}>
                         <InputField
-                            placeholder='Name'
-                            inputContainerStyle={{borderWidth: 1, borderRadius: 5}}
+                            label='Name'
+                            placeholder='e.g. Thomas'
+                            inputContainerStyle={{borderWidth: 1, borderRadius: 5, paddingHorizontal: 5}}
                             containerStyle={{flex:9}}
                         />
                         <IconButton
@@ -38,8 +39,9 @@ class InformationPopulate extends Component {
                     </View>
                     <View style={{flexDirection: 'row', padding: 0}}>
                         <InputField
-                            placeholder='Contact Number'
-                            inputContainerStyle={{borderWidth: 1, borderRadius: 5}}
+                            label='Contact Number'
+                            placeholder='e.g. 123456'
+                            inputContainerStyle={{borderWidth: 1, borderRadius: 5 , paddingHorizontal: 5}}
                             containerStyle={{flex:9}}
                         />
                     </View>
@@ -58,8 +60,10 @@ class InformationPopulate extends Component {
 
                 <View style={{flexDirection: 'row'}}>
                     <InputField
-                        placeholder='Name'
-                        inputContainerStyle={{borderWidth: 1, borderRadius: 5, backgroundColor: "#ffffff"}}
+                        label='Name'
+                        placeholder='e.g. Thomas'
+                        inputContainerStyle={{borderWidth: 1, borderRadius: 5, backgroundColor: "#ffffff", paddingHorizontal: 5}}
+                        labelStyle={{color: "#ffffff", fontSize: 21}}
                     />
                 </View>
 
