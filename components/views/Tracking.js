@@ -22,10 +22,11 @@ class Tracking extends Component {
                 </P>
                 <Card containerStyle={{borderRadius: 7, margin: 0, padding: 10, marginBottom: 10}}>
                     <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-                        <IconButton
-                            icon={
-                                <Feather name="phone-call" size={24} color="black" />
-                            }
+                        <Image
+                            style={{width: 99, height: 101}}
+                            source={{
+                            uri: 'https://reactnative.dev/img/tiny_logo.png',
+                            }}
                         />
                     </View>
                     <View style={{flexDirection: 'row', padding: 0}}>
