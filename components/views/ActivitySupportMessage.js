@@ -18,26 +18,30 @@ export default class ActivitySupportMessage extends Component {
                         You appear to be actively interested in 
                     </P>
                     <Dropdown
-                        selectedValue="Option1"
                         items={[
-                            {label: 'Lorem ipsum', value: 'Option1'},
-                            {label: 'Dolor sit', value: 'Option2'},
-                            {label: 'Amet', value: 'Option3'},
+                            {key: 'option1', label: 'Lorem ipsum'},
+                            {key: 'option2', label: 'Dolor sit'},
+                            {key: 'option3', label: 'Amet'},
+                            {key: 'option4', label: 'Fourth option'},
                         ]}
-                        style={{fontSize: 21, color: "#555555"}}/>
+                        containerStyle={{borderRadius: 10, backgroundColor: "#fafafa" }}
+                        textStyle={{fontSize: 20, color: "#0d0d0d"}}/>
                     <P style={{color: "#000000", fontSize: 21}}>
-                        Are you interested to join that activities online group to learn what is happening locally
+                        Are you interested to join that activities online group to 
+                        learn what is happening locally
                     </P>
                     <Dropdown
-                        selectedValue="Option2"
                         items={[
-                            {label: 'Lorem ipsum', value: 'Option1'},
-                            {label: 'Dolor sit', value: 'Option2'},
-                            {label: 'Amet', value: 'Option3'},
+                            {key: 'option1', label: 'Lorem ipsum'},
+                            {key: 'option2', label: 'Dolor sit'},
+                            {key: 'option3', label: 'Amet'},
+                            {key: 'option4', label: 'Fourth option'},
                         ]}
-                        style={{fontSize: 21, color: "#555555"}}/>
+                        containerStyle={{borderRadius: 10, backgroundColor: "#fafafa" }}
+                        textStyle={{fontSize: 20, color: "#0d0d0d"}}/>
                     <P style={{color: "#000000", fontSize: 21}}>
-                        Click send if you want carer support workers to help you do this or click cancel if you do not  
+                        Click send if you want carer support workers to help you do 
+                        this or click cancel if you do not  
                     </P>
                 </View>
                 <View style={{flexDirection: "row", justifyContent: "space-between"}}>

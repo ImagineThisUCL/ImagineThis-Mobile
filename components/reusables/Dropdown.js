@@ -1,12 +1,24 @@
 import React, { Component } from "react"
 import { StyleSheet } from "react-native"
-import {Picker} from '@react-native-community/picker'
+import ModalSelector from 'react-native-modal-selector'
 
 import base from "../../assets/baseStyle"
 
 const styles = StyleSheet.create({
-    box: {
-        padding: 5
+    modalText: {
+        fontSize: base.font.large,
+        color: "#000000"
+    },
+    modalContainer: {
+        backgroundColor: "#f2f2f2",
+        borderRadius: base.borderRadius
+    },
+    cancelText: {
+        fontSize: base.font.large,
+        color: "#5555ff"
+    },
+    initText: {
+        color: "#8d8d8d"
     },
 })
 
@@ -21,25 +33,22 @@ export default class Dropdown extends Component {
     render() {
         const {
             items,
-            style,
+            textStyle,
+            containerStyle,
         } = this.props
 
-        let boxStyleList = [styles.box]
-
         return (
-            <Picker
-                selectedValue={this.state.selected}
-                onValueChange={(itemValue) =>
-                    this.setState({selected: itemValue})
-                }
-                style={[...boxStyleList, style]}>
-                {items.map((item, index) =>
-                    <Picker.Item 
-                        label={item.label} 
-                        value={item.value} 
-                        key={index} />
-                )}
-            </Picker>
+            <ModalSelector
+                data={items}
+                initValue="Please select"
+                selectStyle={containerStyle}
+                selectTextStyle={textStyle}
+                initValueTextStyle={[textStyle, styles.initText]}
+                optionTextStyle={styles.modalText}
+                optionContainerStyle={styles.modalContainer}
+                cancelTextStyle={styles.cancelText}
+                cancelStyle={styles.modalContainer}
+                cancelText="Cancel" />
         )
     }
 }
