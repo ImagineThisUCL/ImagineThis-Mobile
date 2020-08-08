@@ -1,12 +1,10 @@
 // Recreating: Care Network Page
 
-import { View, ScrollView, useState, Image} from "react-native"
+import { View, ScrollView, Image} from "react-native"
 import React, { Component } from "react"
 import P from "../reusables/P"
 import Button from "../reusables/Button"
-import IconButton from "../reusables/IconButton"
-import { Card } from 'react-native-elements';
-import { Feather } from '@expo/vector-icons';
+import { Card } from 'react-native-elements'
 import Toggle from "../reusables/Toggle"
 
 import base from "../../assets/baseStyle"
