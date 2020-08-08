@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
     initText: {
         color: "#8d8d8d"
     },
+    rootContainer: {
+        flex: 1,
+    },
 })
 
 export default class Dropdown extends Component {
@@ -42,6 +45,7 @@ export default class Dropdown extends Component {
                 data={items}
                 initValue="Please select"
                 selectStyle={containerStyle}
+                style={styles.rootContainer}
                 selectTextStyle={textStyle}
                 initValueTextStyle={[textStyle, styles.initText]}
                 optionTextStyle={styles.modalText}
