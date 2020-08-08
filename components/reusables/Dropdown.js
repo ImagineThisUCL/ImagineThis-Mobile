@@ -43,7 +43,7 @@ export default class Dropdown extends Component {
         return (
             <ModalSelector
                 data={items}
-                initValue="Please select"
+                selectedKey={items[0].key}
                 selectStyle={containerStyle}
                 style={styles.rootContainer}
                 selectTextStyle={textStyle}
