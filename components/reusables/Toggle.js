@@ -5,16 +5,6 @@ import { Button } from 'react-native-elements';
 import base from "../../assets/baseStyle"
 import { Switch } from "react-native-gesture-handler";
 
-const styles = StyleSheet.create({
-    toggle: {
-        flex: 1
-    },
-    continaer: {
-        flex: 1,
-        flexDirection: "row",
-    }
-})
-
 export default class Toggle extends Component {
     constructor(props) {
         super(props);
