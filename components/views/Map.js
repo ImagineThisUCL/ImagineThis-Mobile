@@ -30,7 +30,8 @@ export default class Map extends React.Component {
                             </P>
                     </View>
                     <View style={{padding: 10, backgroundColor: "#11287B", borderRadius: 10, marginTop: 30, width:120, alignItems:"center"}}>
-                        <GoogleMap />
+                        <GoogleMap 
+                            mapStyle={{width: 120, height: 180}}/>
                     </View>
                 </View>
                 <View style={{flexDirection: "row", justifyContent: "space-between"}}>
