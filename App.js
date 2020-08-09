@@ -11,6 +11,7 @@ import ContactView from "./components/views/Contact"
 import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
 import NudgeView from "./components/views/Nudge"
+import TrackingView from "./components/views/Tracking"
 import GoogleMapView from "./components/views/Map"
 import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
 import ReportForSharingView from "./components/views/ReportForSharing"
@@ -113,6 +114,7 @@ export default function App() {
                     <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
                     <Stack.Screen name="ReportForSharing" component={ReportForSharingView} />
                     <Stack.Screen name="Nudge" component={NudgeView} />
+                    <Stack.Screen name="Tracking" component={TrackingView} />
                 </Stack.Navigator>
             </NavigationContainer>
 
