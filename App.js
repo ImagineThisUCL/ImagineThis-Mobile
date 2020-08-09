@@ -15,6 +15,7 @@ import TrackingView from "./components/views/Tracking"
 import GoogleMapView from "./components/views/Map"
 import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
 import ReportForSharingView from "./components/views/ReportForSharing"
+import ActivitySupportMessageView from "./components/views/ActivitySupportMessage"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
 import { StyleSheet, Text, SafeAreaView, StatusBar, Image } from 'react-native'
@@ -114,6 +115,7 @@ export default function App() {
                     <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
                     <Stack.Screen name="ReportForSharing" component={ReportForSharingView} />
                     <Stack.Screen name="Nudge" component={NudgeView} />
+                    <Stack.Screen name="ActivitySupportMessage" component={ActivitySupportMessageView} />
                     <Stack.Screen name="Tracking" component={TrackingView} />
                 </Stack.Navigator>
             </NavigationContainer>
