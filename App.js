@@ -11,6 +11,8 @@ import ContactView from "./components/views/Contact"
 import SettingsView from "./components/views/Settings"
 import WellbeingView from "./components/views/Wellbeing"
 import NudgeView from "./components/views/Nudge"
+import TrackingView from "./components/views/Tracking"
+import GoogleMapView from "./components/views/Map"
 import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
 import ReportForSharingView from "./components/views/ReportForSharing"
 import ActivitySupportMessageView from "./components/views/ActivitySupportMessage"
@@ -106,6 +108,7 @@ export default function App() {
                         component={TabNavigationScreens}
                         options={{headerShown: false}}/>
                     <Stack.Screen name="SetUp" component={SetUpView} />
+                    <Stack.Screen name="GoogleMap" component={GoogleMapView} />
                     <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
                     <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
                     <Stack.Screen name="InformationPopulate" component={InformationPopulateView} />
@@ -113,6 +116,7 @@ export default function App() {
                     <Stack.Screen name="ReportForSharing" component={ReportForSharingView} />
                     <Stack.Screen name="Nudge" component={NudgeView} />
                     <Stack.Screen name="ActivitySupportMessage" component={ActivitySupportMessageView} />
+                    <Stack.Screen name="Tracking" component={TrackingView} />
                 </Stack.Navigator>
             </NavigationContainer>
 

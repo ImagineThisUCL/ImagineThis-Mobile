@@ -39,6 +39,12 @@ export default class Wellbeing extends Component {
                     textStyle={{color: "#ffffff"}}>
                     Go to Report for Sharing
                 </Button>
+                <Button
+                    onPress={() => this.props.navigation.navigate('GoogleMap')}
+                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                    textStyle={{color: "#ffffff"}}>
+                    Go to Map
+                </Button>
             </View>
         )
     }
