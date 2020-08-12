@@ -46,6 +46,7 @@ export default class Button extends Component {
 }
 
 Button.propTypes = {
+    children: propTypes.node.isRequired, // button needs some content
     onPress: propTypes.func,
     style: propTypes.object, // container style
     textStyle: propTypes.object, // text style
