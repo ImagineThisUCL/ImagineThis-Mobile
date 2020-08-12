@@ -1,8 +1,5 @@
 import React, { Component } from "react"
-import { StyleSheet } from "react-native"
-import { Button } from 'react-native-elements';
-
-import base from "../../assets/baseStyle"
+import propTypes from 'prop-types'
 import { Switch } from "react-native-gesture-handler";
 
 export default class Toggle extends Component {
