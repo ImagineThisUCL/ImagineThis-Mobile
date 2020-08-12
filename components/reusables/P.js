@@ -91,6 +91,7 @@ export default class P extends Component {
 }
 
 P.propTypes = {
+    children: propTypes.node.isRequired, // paragraph needs content
     style: propTypes.object, // override styles
     noMargin: propTypes.bool,
     topMargin: propTypes.bool,
