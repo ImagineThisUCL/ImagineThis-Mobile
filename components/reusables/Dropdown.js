@@ -62,7 +62,6 @@ Dropdown.propTypes = {
     items: propTypes.array.isRequired, // requires dropdown options
     textStyle: propTypes.object, // input box text style
     containerStyle: propTypes.object, // input box container style
-    textStyle: propTypes.object, // text style
     /* 
         Other props are set directly in this file - for more information, please
         refer to react-native-modal-selector documentation
