@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { StyleSheet } from "react-native"
+import { StyleSheet, ViewPropTypes, TextPropTypes, ActivityIndicator } from "react-native"
 import { Button, Icon } from 'react-native-elements';
 import propTypes from 'prop-types'
 
@@ -19,11 +19,29 @@ export default class IconButton extends Component {
             <Button
                 {...this.props}
                 style={[...buttonStyleList, this.props.style]}
-                type="clear"
             />
         )
     }
 }
 
+IconButton.defaultProps = {
+    type: 'clear'
+  };
+
 IconButton.propTypes = {
+    // props for button from react-native-elements
+    buttonStyle: propTypes.object,
+    containerStyle: propTypes.object,
+    disabled: propTypes.bool,
+    disabledStyle: propTypes.object,
+    disabledTitleStyle: propTypes.object,
+    iconContainerStyle: propTypes.object,
+    iconRight: propTypes.bool,
+    loading: propTypes.bool,
+    loadingStyle: propTypes.object,
+    onPress: propTypes.func,
+    raised: propTypes.bool,
+    title: propTypes.string,
+    titleStyle: propTypes.object,
+    // type: 
 }
