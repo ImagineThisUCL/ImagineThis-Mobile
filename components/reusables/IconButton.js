@@ -29,7 +29,7 @@ IconButton.defaultProps = {
   };
 
 IconButton.propTypes = {
-    // props for button from react-native-elements
+    // props for react-native-elements Button
     buttonStyle: propTypes.object,
     containerStyle: propTypes.object,
     disabled: propTypes.bool,

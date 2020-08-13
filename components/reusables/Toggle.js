@@ -24,6 +24,7 @@ export default class Toggle extends Component {
 }
 
 Toggle.propTypes = {
+    // prop types for react-native Switch
     disabled: propTypes.bool,
     ios_backgroundColor: propTypes.string,
     onChange: propTypes.func,

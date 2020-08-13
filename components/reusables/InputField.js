@@ -26,10 +26,10 @@ export default class InputField extends Component {
 }
 
 InputField.propTypes = {
-    // props for core TextInput 
+    // props for react-native TextInput 
     placeholder: propTypes.string,
 
-    // props for input from react-native-elements
+    // props for react-native-elements Input
     containerStyle: propTypes.object,
     disabled: propTypes.bool,
     disabledInputStyle: propTypes.object,
