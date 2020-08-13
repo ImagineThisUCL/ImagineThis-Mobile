@@ -64,6 +64,7 @@ class InformationPopulate extends Component {
                         placeholder='e.g. Thomas'
                         inputContainerStyle={{borderWidth: 1, borderRadius: 5, backgroundColor: "#ffffff", paddingHorizontal: 5}}
                         labelStyle={{color: "#ffffff", fontSize: 21}}
+                        leftIcon={<Feather name="plus-circle" size={24} color="black" />}
                     />
                 </View>
 

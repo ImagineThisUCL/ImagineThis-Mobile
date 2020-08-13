@@ -39,8 +39,8 @@ InputField.propTypes = {
     inputStyle: propTypes.object,
     label: propTypes.string,
     labelStyle: propTypes.object,
-    leftIcon: propTypes.object, // not sure
+    leftIcon: propTypes.object,
     leftIconContainerStyle: propTypes.object,
-    rightIcon: propTypes.object, // not sure
+    rightIcon: propTypes.object,
     rightIconContainerStyle: propTypes.object,
 }
