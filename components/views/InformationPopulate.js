@@ -34,7 +34,8 @@ class InformationPopulate extends Component {
                         />
                         <IconButton
                             icon={
-                                <Feather name="phone-call" size={24} color="black" />                            }
+                                <Feather name="phone-call" size={24} color="black" />}
+                            type='clear'
                         />
                     </View>
                     <View style={{flexDirection: 'row', padding: 0}}>

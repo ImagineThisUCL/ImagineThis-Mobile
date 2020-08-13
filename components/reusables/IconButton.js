@@ -43,5 +43,5 @@ IconButton.propTypes = {
     raised: propTypes.bool,
     title: propTypes.string,
     titleStyle: propTypes.object,
-    // type: 
+    type: propTypes.oneOf(['solid', 'clear', 'outline']),
 }
