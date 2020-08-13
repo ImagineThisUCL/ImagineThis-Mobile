@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { StyleSheet } from "react-native"
 import { Input } from "react-native-elements";
+import propTypes from 'prop-types'
 
 import base from "../../assets/baseStyle"
 
@@ -22,4 +23,7 @@ export default class InputField extends Component {
             />
         )
     }
+}
+
+InputField.propTypes = {
 }

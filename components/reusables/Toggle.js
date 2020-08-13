@@ -21,3 +21,7 @@ export default class Toggle extends Component {
         )
     }
 }
+
+Toggle.propTypes = {
+
+}

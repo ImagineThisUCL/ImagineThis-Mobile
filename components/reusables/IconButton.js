@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { StyleSheet } from "react-native"
-import { Button } from 'react-native-elements';
+import { Button, Icon } from 'react-native-elements';
+import propTypes from 'prop-types'
 
 import base from "../../assets/baseStyle"
 
@@ -20,14 +21,9 @@ export default class IconButton extends Component {
                 style={[...buttonStyleList, this.props.style]}
                 type="clear"
             />
-            // <TouchableOpacity
-            //     {...this.props}
-            //     style={[...buttonStyleList, this.props.style]}>
-            //     // <Image
-            //     //     source={require(this.props.iconName)}
-            //     //     style={styles.ImageIconStyle}
-            //     // />
-            // </TouchableOpacity>
         )
     }
+}
+
+IconButton.propTypes = {
 }
