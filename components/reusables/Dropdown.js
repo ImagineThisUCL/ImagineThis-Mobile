@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { StyleSheet } from "react-native"
 import ModalSelector from 'react-native-modal-selector'
+import propTypes from 'prop-types'
 
 import base from "../../assets/baseStyle"
 
@@ -55,4 +56,14 @@ export default class Dropdown extends Component {
                 cancelText="Cancel" />
         )
     }
+}
+
+Dropdown.propTypes = {
+    items: propTypes.array.isRequired, // requires dropdown options
+    textStyle: propTypes.object, // input box text style
+    containerStyle: propTypes.object, // input box container style
+    /* 
+        Other props are set directly in this file - for more information, please
+        refer to react-native-modal-selector documentation
+    */
 }

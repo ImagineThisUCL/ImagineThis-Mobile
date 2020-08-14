@@ -7,6 +7,7 @@ import {
     Text,
 } from "react-native"
 import Slider from '@react-native-community/slider'
+import propTypes from 'prop-types'
 
 import base from "../../assets/baseStyle"
 
@@ -49,4 +50,19 @@ export default class CustomSlider extends Component {
             </View>
         )
     }
+}
+
+CustomSlider.propTypes = {
+    minimumValue: propTypes.number.isRequired,
+    maximumValue: propTypes.number.isRequired,
+    value: propTypes.number.isRequired,
+    step: propTypes.number, // default is 1
+    minimumTrackTintColor: propTypes.string, // track color for left side
+    maximumTrackTintColor: propTypes.string, // track color for right side
+    thumbTintColor: propTypes.string, // color of drag element
+    labelStyle: propTypes.object, // style object for min/max labels
+    valueLabelStyle: propTypes.object, // style object for value label
+    /* 
+        For other props please refer to @react-native-community/slider documentation
+    */
 }
