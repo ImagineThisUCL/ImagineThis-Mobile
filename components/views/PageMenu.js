@@ -19,14 +19,14 @@ const styles = StyleSheet.create({
     }
 })
 
-class Home extends Component {
+class PageMenu extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <StatusBar style="auto" />
                 <View>
                     <Text style={styles.text}>
-                        Welcome to the home screen of our testing app.
+                        Page Menu
                     </Text>
                 </View>
                 <Button
@@ -36,31 +36,14 @@ class Home extends Component {
                     Go to SetUp screen
                 </Button>
                 <Button
-                    onPress={() => this.props.navigation.navigate('SetUpInline')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to SetUp screen with inline styles
-                </Button>
-                <Button
-                    onPress={() => this.props.navigation.navigate('SetUpComponents')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to SetUp screen with components
-                </Button>
-                <Button
                     onPress={() => this.props.navigation.navigate('InformationPopulate')}
                     style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
                     textStyle={{color: "#ffffff"}}>
-                    Go to Information Populate View
-                </Button>
-                <Button
-                    onPress={() => this.props.navigation.navigate('PageMenu')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to Page Menu
+                    Go to Information Populate screen
                 </Button>
             </View>
         )
     }
 }
-export default Home
+
+export default PageMenu;
