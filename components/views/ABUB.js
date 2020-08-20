@@ -12,7 +12,7 @@ class ABUB extends Component {render() {
 </View>
 <View style={{marginTop: 14}}>
 <Image
-source={require('../../assets/img/14.png')}
+source={require('../../assets/img/20.png')}
 style={{width: 408, height: 566}}
 />
 </View>

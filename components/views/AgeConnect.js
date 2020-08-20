@@ -12,7 +12,7 @@ class AgeConnect extends Component {render() {
 </View>
 <View style={{marginTop: 23}}>
 <Image
-source={require('../../assets/img/15.png')}
+source={require('../../assets/img/21.png')}
 style={{width: 410, height: 525}}
 />
 </View>

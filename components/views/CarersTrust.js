@@ -12,7 +12,7 @@ class CarersTrust extends Component {render() {
 </View>
 <View style={{marginTop: 11}}>
 <Image
-source={require('../../assets/img/18.png')}
+source={require('../../assets/img/24.png')}
 style={{width: 414, height: 549}}
 />
 </View>

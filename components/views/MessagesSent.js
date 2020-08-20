@@ -19,13 +19,13 @@ class MessagesSent extends Component {render() {
 </View>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/20.png')}
+source={require('../../assets/img/26.png')}
 style={{width: 38, height: 40}}
 />
 </View>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/21.png')}
+source={require('../../assets/img/27.png')}
 style={{width: 43, height: 40}}
 />
 </View>

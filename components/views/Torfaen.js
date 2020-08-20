@@ -12,7 +12,7 @@ class Torfaen extends Component {render() {
 </View>
 <View style={{marginTop: 25}}>
 <Image
-source={require('../../assets/img/17.png')}
+source={require('../../assets/img/23.png')}
 style={{width: 402, height: 551}}
 />
 </View>

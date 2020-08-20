@@ -50,7 +50,7 @@ function NavigationBar() {
                         return (
                             /* Option b with uri */
                             <Image
-                                source={require('./assets/img/29.png')}
+                                source={require('./assets/img/35.png')}
                                 style={{width: 24, height: 22}}
                             />
                         )
@@ -64,7 +64,7 @@ function NavigationBar() {
                         return (
                             /* Option b with uri */
                             <Image
-                                source={require('./assets/img/30.png')}
+                                source={require('./assets/img/36.png')}
                                 style={{width: 24, height: 22}}
                             />
                         )
@@ -78,7 +78,7 @@ function NavigationBar() {
                         return (
                             /* Option b with uri */
                             <Image
-                                source={require('./assets/img/31.png')}
+                                source={require('./assets/img/37.png')}
                                 style={{width: 24, height: 22}}
                             />
                         )
@@ -92,7 +92,7 @@ function NavigationBar() {
                         return (
                             /* Option b with uri */
                             <Image
-                                source={require('./assets/img/32.png')}
+                                source={require('./assets/img/38.png')}
                                 style={{width: 24, height: 22}}
                             />
                         )
@@ -106,7 +106,7 @@ function NavigationBar() {
                         return (
                             /* Option b with uri */
                             <Image
-                                source={require('./assets/img/33.png')}
+                                source={require('./assets/img/39.png')}
                                 style={{width: 24, height: 22}}
                             />
                         )

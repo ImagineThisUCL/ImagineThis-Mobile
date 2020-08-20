@@ -12,7 +12,7 @@ class Dewis extends Component {render() {
 </View>
 <View style={{marginTop: 35}}>
 <Image
-source={require('../../assets/img/19.png')}
+source={require('../../assets/img/25.png')}
 style={{width: 402, height: 460}}
 />
 </View>

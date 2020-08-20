@@ -2,126 +2,69 @@ import { View, ScrollView } from "react-native"
 import React, { Component } from "react"
 import base from "../../assets/baseStyle"
 import P from '../reusables/P'
-import Button from '../reusables/Button'
-import { StatusBar } from 'expo-status-bar'
-import Toggle from "../reusables/Toggle"
-import Dropdown from "../reusables/Dropdown"
+import ImageButton from "../reusables/ImageButton"
+import {
+  LineChart,
+  BarChart,
+  PieChart
+} from "react-native-chart-kit"
 
-class AutoPopulatedMesage1 extends Component {render() {
+class ReportforSharing extends Component {render() {
+const LINE_CHART_DATA = {
+            labels: ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun."],
+            datasets: [
+                {
+                data: [4, 6, 5, 9, 1, 5],
+                color: (opacity = 1) => `rgba(26, 154, 169, ${opacity})`, // optional
+                strokeWidth: 2 // optional
+                }
+            ]
+        }
+
+        const LINE_CHART_CONFIG = {
+            backgroundGradientFrom: "#ffffff",
+            backgroundGradientFromOpacity: 1,
+            backgroundGradientTo: "#ffffff",
+            backgroundGradientToOpacity: 1,
+            color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+            strokeWidth: 2, // optional, default 3
+            barPercentage: 0.5,
+            useShadowColorFromDataset: true // optional
+        }
         return (
             <ScrollView style={{flex: 1, padding: 0, backgroundColor: "rgba(16,40,123,1.0)"}}>
-<View style={{marginTop: 14}}>
-<P style={{fontSize: 24.0, color: "rgba(255,255,255,1.0)", textAlign: 'left'}}>Auto formatted Text Message</P>
-</View>
-<View style={{marginTop: 7}}>
-<View style={{borderRadius: 32.0 , marginLeft: -1, marginRight: -1, padding: 0, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(0,0,0,1.0)", borderWidth: 1.0}}>
-<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 26}}>
-<View style={{flex: 1}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>Hello </P>
-</View>
-<View style={{flex: 3}}>
-<Dropdown
-items={[
-{key: 'option1', label: 'Jim'},
-{key: 'option2', label: 'Placeholder'},
-]}
-containerStyle={{borderRadius:0.0, backgroundColor: "rgba(255,255,255,1.0)"}}
-textStyle={{fontSize: 24.0, color: "rgba(0,0,0,1.0)"}}/>
-
-</View>
-</View>
-<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 23}}>
-<View style={{flex: 6}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>Just to let you know I am </P>
-</View>
-<View style={{flex: 2}}>
-<Dropdown
-items={[
-{key: 'option1', label: 'OK'},
-{key: 'option2', label: 'Placeholder'},
-]}
-containerStyle={{borderRadius:0.0, backgroundColor: "rgba(255,255,255,1.0)"}}
-textStyle={{fontSize: 24.0, color: "rgba(0,0,0,1.0)"}}/>
-
-</View>
-</View>
-<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 24}}>
-<View style={{flex: 3}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>How about on               </P>
-</View>
-<View style={{flex: 3}}>
-<Dropdown
-items={[
-{key: 'option1', label: '22/12'},
-{key: 'option2', label: 'Placeholder'},
-]}
-containerStyle={{borderRadius:0.0, backgroundColor: "rgba(255,255,255,1.0)"}}
-textStyle={{fontSize: 24.0, color: "rgba(0,0,0,1.0)"}}/>
-
-</View>
-</View>
-<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 23}}>
-<View style={{flex: 1}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>at </P>
-</View>
-<View style={{flex: 3}}>
-<Dropdown
-items={[
-{key: 'option1', label: '10 a.m.'},
-{key: 'option2', label: 'Placeholder'},
-]}
-containerStyle={{borderRadius:0.0, backgroundColor: "rgba(255,255,255,1.0)"}}
-textStyle={{fontSize: 24.0, color: "rgba(0,0,0,1.0)"}}/>
-
-</View>
-</View>
-<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 18}}>
-<View style={{flex: 3}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>we have a {"\n"}</P>
-</View>
-<View style={{flex: 5}}>
-<Dropdown
-items={[
-{key: 'option1', label: 'Chat about footie'},
-{key: 'option2', label: 'Placeholder'},
-]}
-containerStyle={{borderRadius:0.0, backgroundColor: "rgba(255,255,255,1.0)"}}
-textStyle={{fontSize: 24.0, color: "rgba(0,0,0,1.0)"}}/>
-
-</View>
-</View>
-<View style={{flexDirection: 'row', marginTop: 25, justifyContent: "center"}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>All the best.  Jo {"\n"}</P>
-</View>
-<View style={{flexDirection: 'row', marginTop: 24, justifyContent: "center"}}>
-<P style={{fontSize: 24.0, color: "rgba(0,0,0,1.0)", textAlign: 'left'}}>Include Wellbeing Diary {"\n"}</P>
-</View>
-<View style={{flexDirection: 'row', marginTop: 18, justifyContent: "flex-end"}}>
-<Toggle
-trackColor={{ false: "#767577", true: "#81b0ff" }}
-thumbColor="white"
-ios_backgroundColor="#3e3e3e"
-//    onValueChange={toggleSwitch}
-//    value={isEnabled}
-/>
-</View>
-</View>
-
-</View>
-<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 22}}>
-<Button
-onPress={() => this.props.navigation.navigate('WellbeingNetwork')}
-   style={{backgroundColor:"rgba(255,255,255,1.0)", marginTop: base.margin, width: 116, borderRadius: 100.0}}
-   textStyle={{color: "rgba(20,126,251,1.0)", fontSize: 26.0}}
->Cancel</Button>
-<Button
-onPress={() => this.props.navigation.navigate('AutoPopulatedMesage2')}
-   style={{backgroundColor:"rgba(255,255,255,1.0)", marginTop: base.margin, width: 116, borderRadius: 100.0}}
-   textStyle={{color: "rgba(20,126,251,1.0)", fontSize: 26.0}}
->Send</Button>
+<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 27}}>
+<P style={{fontSize: 24.0, color: "rgba(255,255,255,1.0)", textAlign: 'left'}}>Well-being Diary </P>
+<ImageButton
+onPress={() => this.props.navigation.navigate('Reachout')}
+style={{padding: 10}}
+imageStyle={{width: 24, height: 31}}
+imageSrc={require('../../assets/img/2.png')}/>
  </View>
+<View style={{marginTop: 57}}>
+<View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10, marginBottom: 10}}>
+<LineChart
+data={LINE_CHART_DATA}
+width={363}
+height={229}
+chartConfig={LINE_CHART_CONFIG}
+bezier/>
+</View>
+
+</View>
+<View style={{marginTop: 13}}>
+<View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10, marginBottom: 10}}>
+<LineChart
+data={LINE_CHART_DATA}
+width={359}
+height={272}
+chartConfig={LINE_CHART_CONFIG}
+bezier/>
+</View>
+
+</View>
             </ScrollView>
         )
     }
 }
-export default AutoPopulatedMesage1
+export default ReportforSharing

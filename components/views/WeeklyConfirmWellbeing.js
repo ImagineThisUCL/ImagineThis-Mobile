@@ -8,7 +8,10 @@ import CustomSlider from "../reusables/CustomSlider"
 class WeeklyConfirmWellbeing extends Component {render() {
         return (
             <ScrollView style={{flex: 1, padding: 0, backgroundColor: "rgba(16,40,123,1.0)"}}>
-<View style={{marginTop: 98}}>
+<View style={{marginTop: 23}}>
+<P style={{fontSize: 24.0, color: "rgba(255,255,255,1.0)", textAlign: 'left'}}>Over the past 7 days, rate how well you have have felt. </P>
+</View>
+<View style={{marginTop: 9}}>
 <View style={{padding: 10, backgroundColor: "rgba(255,255,255,1.0)", borderRadius: 10.0}}>
                     <CustomSlider
                         minimumTrackTintColor="#A4C8FF"

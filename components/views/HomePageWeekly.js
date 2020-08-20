@@ -33,7 +33,7 @@ circleDiameter={176}>7</Button>
 <ImageButton
 style={{padding: 10}}
 imageStyle={{width: 31, height: 37}}
-imageSrc={require('../../assets/img/25.png')}/>
+imageSrc={require('../../assets/img/31.png')}/>
 </View>
 </View>
 </View>
@@ -52,7 +52,7 @@ imageSrc={require('../../assets/img/25.png')}/>
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 14}}>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/26.png')}
+source={require('../../assets/img/32.png')}
 style={{width: 32, height: 46}}
 />
 </View>
@@ -66,7 +66,7 @@ style={{width: 32, height: 46}}
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 26}}>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/27.png')}
+source={require('../../assets/img/33.png')}
 style={{width: 39, height: 40}}
 />
 </View>
@@ -80,7 +80,7 @@ style={{width: 39, height: 40}}
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 27}}>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/28.png')}
+source={require('../../assets/img/34.png')}
 style={{width: 43, height: 40}}
 />
 </View>

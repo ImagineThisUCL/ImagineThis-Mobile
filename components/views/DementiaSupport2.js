@@ -12,7 +12,7 @@ class DementiaSupport2 extends Component {render() {
 </View>
 <View style={{marginTop: 17}}>
 <Image
-source={require('../../assets/img/23.png')}
+source={require('../../assets/img/29.png')}
 style={{width: 395, height: 568}}
 />
 </View>

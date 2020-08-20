@@ -1,4 +1,4 @@
-import { View, ScrollView } from "react-native"
+import { View, ScrollView, Image } from "react-native"
 import React, { Component } from "react"
 import base from "../../assets/baseStyle"
 import P from '../reusables/P'
@@ -30,7 +30,22 @@ inputContainerStyle={{backgroundColor: "rgba(255,255,255,1.0)"
                 , borderRadius: 5.0, borderWidth: 1}}
 />
 </View>
-<View style={{flexDirection: 'row', marginTop: 0, justifyContent: "center"}}>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 0}}>
+<View style={{flex: 1}}>
+<Image
+source={require('../../assets/img/5.png')}
+style={{width: 21, height: 25}}
+/>
+</View>
+<View style={{flex: 1}}>
+<ImageButton
+onPress={() => this.props.navigation.navigate('AutoPopulatedMesage1')}
+style={{padding: 10}}
+imageStyle={{width: 24, height: 23}}
+imageSrc={require('../../assets/img/6.png')}/>
+</View>
+</View>
+<View style={{flexDirection: 'row', marginTop: 6, justifyContent: "center"}}>
 <InputField
 label='Name :'
 placeholder='Robin'
@@ -46,7 +61,22 @@ inputContainerStyle={{backgroundColor: "rgba(255,255,255,1.0)"
                 , borderRadius: 5.0, borderWidth: 1}}
 />
 </View>
-<View style={{flexDirection: 'row', marginTop: 1, justifyContent: "center"}}>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 0}}>
+<View style={{flex: 1}}>
+<Image
+source={require('../../assets/img/7.png')}
+style={{width: 21, height: 25}}
+/>
+</View>
+<View style={{flex: 1}}>
+<ImageButton
+onPress={() => this.props.navigation.navigate('AutoPopulatedMesage1')}
+style={{padding: 10}}
+imageStyle={{width: 24, height: 23}}
+imageSrc={require('../../assets/img/8.png')}/>
+</View>
+</View>
+<View style={{flexDirection: 'row', marginTop: 3, justifyContent: "center"}}>
 <InputField
 label='Name :'
 placeholder='Jim'
@@ -62,6 +92,21 @@ inputContainerStyle={{backgroundColor: "rgba(255,255,255,1.0)"
                 , borderRadius: 5.0, borderWidth: 1}}
 />
 </View>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 0}}>
+<View style={{flex: 1}}>
+<Image
+source={require('../../assets/img/9.png')}
+style={{width: 21, height: 25}}
+/>
+</View>
+<View style={{flex: 1}}>
+<ImageButton
+onPress={() => this.props.navigation.navigate('AutoPopulatedMesage1')}
+style={{padding: 10}}
+imageStyle={{width: 24, height: 23}}
+imageSrc={require('../../assets/img/10.png')}/>
+</View>
+</View>
 </View>
 
 </View>
@@ -76,34 +121,34 @@ inputContainerStyle={{backgroundColor: "rgba(255,255,255,1.0)"
 onPress={() => this.props.navigation.navigate('Torfaen')}
 style={{padding: 10}}
 imageStyle={{width: 81, height: 61}}
-imageSrc={require('../../assets/img/5.png')}/>
+imageSrc={require('../../assets/img/11.png')}/>
 <ImageButton
 onPress={() => this.props.navigation.navigate('CarersTrust')}
 style={{padding: 10}}
 imageStyle={{width: 124, height: 61}}
-imageSrc={require('../../assets/img/6.png')}/>
+imageSrc={require('../../assets/img/12.png')}/>
 <ImageButton
 onPress={() => this.props.navigation.navigate('Dewis')}
 style={{padding: 10}}
 imageStyle={{width: 64, height: 61}}
-imageSrc={require('../../assets/img/7.png')}/>
+imageSrc={require('../../assets/img/13.png')}/>
  </View>
 <View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 9}}>
 <ImageButton
 onPress={() => this.props.navigation.navigate('ABUB')}
 style={{padding: 10}}
 imageStyle={{width: 197, height: 61}}
-imageSrc={require('../../assets/img/8.png')}/>
+imageSrc={require('../../assets/img/14.png')}/>
 <ImageButton
 onPress={() => this.props.navigation.navigate('AgeConnect')}
 style={{padding: 10}}
 imageStyle={{width: 64, height: 61}}
-imageSrc={require('../../assets/img/9.png')}/>
+imageSrc={require('../../assets/img/15.png')}/>
 <ImageButton
 onPress={() => this.props.navigation.navigate('FriendofMine')}
 style={{padding: 10}}
 imageStyle={{width: 48, height: 61}}
-imageSrc={require('../../assets/img/10.png')}/>
+imageSrc={require('../../assets/img/16.png')}/>
  </View>
 <View style={{marginTop: 7}}>
 <P style={{fontSize: 13.0, color: "rgba(255,250,250,1.0)", textAlign: 'left'}}>Apps & Digital Services that work for you</P>
@@ -113,17 +158,17 @@ imageSrc={require('../../assets/img/10.png')}/>
 onPress={() => this.props.navigation.navigate('DementiaSupport1')}
 style={{padding: 10}}
 imageStyle={{width: 73, height: 61}}
-imageSrc={require('../../assets/img/11.png')}/>
+imageSrc={require('../../assets/img/17.png')}/>
 <ImageButton
 onPress={() => this.props.navigation.navigate('DementiaSupport2')}
 style={{padding: 10}}
 imageStyle={{width: 61, height: 61}}
-imageSrc={require('../../assets/img/12.png')}/>
+imageSrc={require('../../assets/img/18.png')}/>
 <ImageButton
 onPress={() => this.props.navigation.navigate('Headspace')}
 style={{padding: 10}}
 imageStyle={{width: 216, height: 61}}
-imageSrc={require('../../assets/img/13.png')}/>
+imageSrc={require('../../assets/img/19.png')}/>
  </View>
             </ScrollView>
         )

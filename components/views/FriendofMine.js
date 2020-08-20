@@ -12,7 +12,7 @@ class FriendofMine extends Component {render() {
 </View>
 <View style={{marginTop: 35}}>
 <Image
-source={require('../../assets/img/16.png')}
+source={require('../../assets/img/22.png')}
 style={{width: 415, height: 262}}
 />
 </View>

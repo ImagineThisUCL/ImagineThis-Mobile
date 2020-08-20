@@ -12,7 +12,7 @@ class Headspace extends Component {render() {
 </View>
 <View style={{marginTop: 34}}>
 <Image
-source={require('../../assets/img/24.png')}
+source={require('../../assets/img/30.png')}
 style={{width: 392, height: 505}}
 />
 </View>
