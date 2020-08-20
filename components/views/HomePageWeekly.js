@@ -2,6 +2,7 @@ import { View, ScrollView, Image } from "react-native"
 import React, { Component } from "react"
 import base from "../../assets/baseStyle"
 import P from '../reusables/P'
+import Button from '../reusables/Button'
 import { StatusBar } from 'expo-status-bar'
 import ImageButton from "../reusables/ImageButton"
 
@@ -21,11 +22,19 @@ class HomePageWeekly extends Component {render() {
 </View>
 <View style={{marginTop: 11}}>
 <View style={{borderRadius: 10.0 , marginLeft: 11, marginRight: 11, padding: 0, backgroundColor: "rgba(255,255,255,1.0)"}}>
-<View style={{flexDirection: 'row', marginTop: 9, justifyContent: "flex-end"}}>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 9}}>
+<View style={{flex: 4}}>
+<Button
+   style={{backgroundColor:"rgba(15,9,78,1.0)", marginTop: base.margin, width: 176}}
+   textStyle={{color: "rgba(255,255,255,1.0)", fontSize: 40.0}}
+circleDiameter={176}>7</Button>
+</View>
+<View style={{flex: 1}}>
 <ImageButton
 style={{padding: 10}}
 imageStyle={{width: 31, height: 37}}
 imageSrc={require('../../assets/img/25.png')}/>
+</View>
 </View>
 </View>
 
