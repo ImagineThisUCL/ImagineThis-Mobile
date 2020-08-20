@@ -17,10 +17,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 5,
     },
-    sliderWrapper: {
-        flexDirection: "column",
-        flexGrow: 1,
-    },
 })
 
 /* This is an implementation using the @react-native-community/slider 
@@ -37,7 +33,7 @@ export default class CustomSlider extends Component {
         let labelStyleList = []
 
         return (
-            <View style={styles.sliderWrapper}>
+            <View>
                 <View style={styles.labelsWrapper}>
                     <Text style={[...labelStyleList, this.props.labelStyle]}>{this.props.minimumValue}</Text>
                     <Text style={[...labelStyleList, this.props.valueLabelStyle]}>{this.state.sliderValue}</Text>
