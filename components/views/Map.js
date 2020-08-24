@@ -15,8 +15,9 @@ export default class Map extends React.Component {
                 </P>
                 <View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10, marginBottom: 10, alignItems:"center"}}>
                     <Button
-                        style={{alignSelf:"center",backgroundColor: "#ffffff", borderRadius: 25, marginTop: base.margin}}
-                        textStyle={{color: "#147EFB", fontWeight: "bold"}}>
+                        style={{alignSelf:"center", backgroundColor: "#11287B", marginTop: base.margin}}
+                        textStyle={{color: "#ffffff", fontWeight: "bold"}}
+                        circleDiameter={120}>
                         Start tracking
                     </Button>
                     <P style={{color: "#000000", fontSize: 15,fontWeight:"400",textAlign:"center"}}>
