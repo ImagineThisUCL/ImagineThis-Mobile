@@ -41,6 +41,12 @@ class Contact extends Component {
                     textStyle={{color: "#ffffff"}}>
                     Go to ActivitySupportMessage
                 </Button>
+                <Button
+                    onPress={() => this.props.navigation.navigate('MessagesSent')}
+                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
+                    textStyle={{color: "#ffffff"}}>
+                    Go to MessagesSent
+                </Button>
             </View>
         )
     }
