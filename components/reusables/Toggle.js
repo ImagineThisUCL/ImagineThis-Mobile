@@ -1,9 +1,7 @@
 import React, { Component } from "react"
-import { StyleSheet } from "react-native"
-import { Button } from 'react-native-elements';
-
-import base from "../../assets/baseStyle"
-import { Switch } from "react-native-gesture-handler";
+import propTypes from 'prop-types'
+import {Switch } from "react-native";
+import { color } from "react-native-reanimated";
 
 export default class Toggle extends Component {
     constructor(props) {
@@ -23,4 +21,15 @@ export default class Toggle extends Component {
             />  
         )
     }
+}
+
+Toggle.propTypes = {
+    // prop types for react-native Switch
+    disabled: propTypes.bool,
+    ios_backgroundColor: propTypes.string,
+    onChange: propTypes.func,
+    onValueChange: propTypes.func,
+    thumbColor: propTypes.string,
+    trackColor: propTypes.object,
+    value: propTypes.bool,
 }

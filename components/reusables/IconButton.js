@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { StyleSheet } from "react-native"
-import { Button } from 'react-native-elements';
+import { StyleSheet, ViewPropTypes, TextPropTypes, ActivityIndicator } from "react-native"
+import { Button, Icon } from 'react-native-elements';
+import propTypes from 'prop-types'
 
 import base from "../../assets/baseStyle"
 
@@ -18,16 +19,29 @@ export default class IconButton extends Component {
             <Button
                 {...this.props}
                 style={[...buttonStyleList, this.props.style]}
-                type="clear"
             />
-            // <TouchableOpacity
-            //     {...this.props}
-            //     style={[...buttonStyleList, this.props.style]}>
-            //     // <Image
-            //     //     source={require(this.props.iconName)}
-            //     //     style={styles.ImageIconStyle}
-            //     // />
-            // </TouchableOpacity>
         )
     }
+}
+
+IconButton.defaultProps = {
+    type: 'clear'
+  };
+
+IconButton.propTypes = {
+    // props for react-native-elements Button
+    buttonStyle: propTypes.object,
+    containerStyle: propTypes.object,
+    disabled: propTypes.bool,
+    disabledStyle: propTypes.object,
+    disabledTitleStyle: propTypes.object,
+    iconContainerStyle: propTypes.object,
+    iconRight: propTypes.bool,
+    loading: propTypes.bool,
+    loadingStyle: propTypes.object,
+    onPress: propTypes.func,
+    raised: propTypes.bool,
+    title: propTypes.string,
+    titleStyle: propTypes.object,
+    type: propTypes.oneOf(['solid', 'clear', 'outline']),
 }
