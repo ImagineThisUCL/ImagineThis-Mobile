@@ -7,7 +7,6 @@ import {
     TouchableOpacity,
     View,
 } from "react-native"
-import propTypes from 'prop-types'
 
 import base from "../../assets/baseStyle"
 
@@ -32,10 +31,4 @@ export default class Button extends Component {
             </View>
         )
     }
-}
-
-Button.propTypes = {
-    imageSrc: propTypes.object.isRequired,
-    style: propTypes.object, // container styles
-    imageStyle: propTypes.object, // image styles
 }

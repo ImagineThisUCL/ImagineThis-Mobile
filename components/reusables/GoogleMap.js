@@ -1,7 +1,6 @@
 import { View, StyleSheet} from "react-native"
 import React, { Component } from "react"
-import MapView ,{ PROVIDER_GOOGLE }from 'react-native-maps'
-import propTypes from 'prop-types'
+import MapView ,{ PROVIDER_GOOGLE }from 'react-native-maps';
 
 import base from "../../assets/baseStyle"
 
@@ -36,8 +35,4 @@ export default class GoogleMap extends Component {
             </View>
         )
     }
-}
-
-GoogleMap.propTypes = {
-    mapStyle: propTypes.object, // override default styles, e.g. set fixed width and height
 }
