@@ -35,7 +35,9 @@ function TabNavigationScreens() {
                 },
                 style: {
                     backgroundColor: "#D5E6EC",
-                    paddingBottom: 2
+                    paddingBottom: 2,
+                    paddingTop: 2,
+                    height: 65,
                 },
             }}>
             <Tab.Screen
@@ -55,7 +57,8 @@ function TabNavigationScreens() {
                             /* Option a with require and asset in the img folder */
                             <Image
                                 source={require('./assets/img/icon-heart.png')}
-                                style={{width: 22, height: 22}}
+                                style={{width: 26, height: 26}}
+                                resizeMode="contain"
                             />
                         )
                     },

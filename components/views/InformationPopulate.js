@@ -29,7 +29,13 @@ class InformationPopulate extends Component {
                         <InputField
                             label='Name'
                             placeholder='e.g. Thomas'
-                            inputContainerStyle={{borderWidth: 1, borderRadius: 5, paddingHorizontal: 5}}
+                            labelStyle={{color: "#11287B", marginBottom: 5}}
+                            inputStyle={{color: "#11287B"}}
+                            inputContainerStyle={{
+                                borderWidth: 1,
+                                borderRadius: 5,
+                                paddingHorizontal: 10,
+                                backgroundColor: "#ffffff"}}
                             containerStyle={{flex:9}}
                         />
                         <IconButton
