@@ -35,7 +35,7 @@ export default class Button extends Component {
 }
 
 Button.propTypes = {
-    imageSrc: propTypes.object.isRequired,
+    imageSrc: propTypes.node.isRequired,
     style: propTypes.object, // container styles
     imageStyle: propTypes.object, // image styles
 }
