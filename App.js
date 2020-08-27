@@ -19,7 +19,7 @@ import ActivitySupportMessageView from "./components/views/ActivitySupportMessag
 import MessagesSentView from "./components/views/MessagesSent"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from "@expo/vector-icons/Ionicons"
-import { StyleSheet, Text, SafeAreaView, StatusBar, Image } from 'react-native'
+import { SafeAreaView, Image } from 'react-native'
 
 const Tab = createBottomTabNavigator();
 
