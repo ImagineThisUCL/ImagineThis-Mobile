@@ -1,30 +1,34 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import SetUpView from "./components/views/SetUp"
-import SetUpInlineView from "./components/views/SetUpInline"
-import SetUpComponentsView from "./components/views/SetUpComponents"
-import InformationPopulateView from "./components/views/InformationPopulate"
-import HomeView from "./components/views/Home"
-import NetworkView from "./components/views/Network"
-import ContactView from "./components/views/Contact"
-import SettingsView from "./components/views/Settings"
-import WellbeingView from "./components/views/Wellbeing"
-import NudgeView from "./components/views/Nudge"
-import TrackingView from "./components/views/Tracking"
-import GoogleMapView from "./components/views/Map"
-import WeeklyConfirmWellbeingView from "./components/views/WeeklyConfirmWellbeing"
-import ReportForSharingView from "./components/views/ReportForSharing"
-import ActivitySupportMessageView from "./components/views/ActivitySupportMessage"
-import MessagesSentView from "./components/views/MessagesSent"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Ionicons from "@expo/vector-icons/Ionicons"
-import { SafeAreaView, Image } from 'react-native'
+import { SafeAreaView, Image } from 'react-native';
+import MessagesSent from "./components/views/MessagesSent"
+import ReportforSharing from "./components/views/ReportforSharing"
+import WellbeingNetwork from "./components/views/WellbeingNetwork"
+import WellbeingbyActivity from "./components/views/WellbeingbyActivity"
+import SetUp from "./components/views/SetUp"
+import DementiaSupport1 from "./components/views/DementiaSupport1"
+import StartPassiveTrackingandReporting from "./components/views/StartPassiveTrackingandReporting"
+import Informationtopopulatmessages from "./components/views/Informationtopopulatmessages"
+import DementiaSupport2 from "./components/views/DementiaSupport2"
+import Dewis from "./components/views/Dewis"
+import Torfaen from "./components/views/Torfaen"
+import ABUB from "./components/views/ABUB"
+import FriendofMine from "./components/views/FriendofMine"
+import CarersTrust from "./components/views/CarersTrust"
+import Wellbeingrating from "./components/views/Wellbeingrating"
+import OutdoorstepsvWellbeing from "./components/views/OutdoorstepsvWellbeing"
+import Reachout from "./components/views/Reachout"
+import AgeConnect from "./components/views/AgeConnect"
+import Headspace from "./components/views/Headspace"
+import CareNetworkPage from "./components/views/CareNetworkPage"
+import AutoPopulatedMesage1 from "./components/views/AutoPopulatedMesage1"
+import AutoPopulatedMesage2 from "./components/views/AutoPopulatedMesage2"
+import CallsmadevWellbeing from "./components/views/CallsmadevWellbeing"
 
 const Tab = createBottomTabNavigator();
-
-// Bottom tab navigation is defined here and then nested in a Stack.Navigator
-function TabNavigationScreens() {
+function NavigationBar() {
     return (
         <Tab.Navigator
             tabBarOptions={{
@@ -34,71 +38,86 @@ function TabNavigationScreens() {
                     fontSize: 12,
                 },
                 style: {
-                    backgroundColor: "#D5E6EC",
+                    backgroundColor: "rgba(213,230,235,1.0)",
                     paddingBottom: 2,
                     paddingTop: 2,
                     height: 65,
                 },
             }}>
-            <Tab.Screen
+ <Tab.Screen
                 name="Network"
-                component={NetworkView}
-                options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="ios-contacts" color={color} size={size} />
-                    )
-                }}/>
-            <Tab.Screen
-                name="Well-being"
-                component={WellbeingView}
+                component={WellbeingNetwork}
                 options={{
                     tabBarIcon: () => {
                         return (
-                            /* Option a with require and asset in the img folder */
                             <Image
-                                source={require('./assets/img/icon-heart.png')}
+                                source={require('./assets/img/96.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
                         )
                     },
                 }}/>
-            <Tab.Screen
-                name="Home"
-                component={HomeView}
+ <Tab.Screen
+                name="Well-being"
+                component={ReportforSharing}
                 options={{
                     tabBarIcon: () => {
                         return (
-                            /* Option b with uri */
                             <Image
-                                source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Font_Awesome_5_solid_home.svg/270px-Font_Awesome_5_solid_home.svg.png'}}
-                                style={{width: 24, height: 22}}
+                                source={require('./assets/img/97.png')}
+                                style={{width: 26, height: 26}}
+                                resizeMode="contain"
                             />
                         )
                     },
                 }}/>
-            <Tab.Screen
+ <Tab.Screen
+                name="Home"
+                component={WellbeingbyActivity}
+                options={{
+                    tabBarIcon: () => {
+                        return (
+                            <Image
+                                source={require('./assets/img/98.png')}
+                                style={{width: 26, height: 26}}
+                                resizeMode="contain"
+                            />
+                        )
+                    },
+                }}/>
+ <Tab.Screen
                 name="Contact"
-                component={ContactView}
+                component={MessagesSent}
                 options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="ios-mail" color={color} size={size} />
-                    )
+                    tabBarIcon: () => {
+                        return (
+                            <Image
+                                source={require('./assets/img/99.png')}
+                                style={{width: 26, height: 26}}
+                                resizeMode="contain"
+                            />
+                        )
+                    },
                 }}/>
-            <Tab.Screen
+ <Tab.Screen
                 name="Settings"
-                component={SettingsView}
+                component={SetUp}
                 options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="ios-settings" color={color} size={size} />
-                    )
+                    tabBarIcon: () => {
+                        return (
+                            <Image
+                                source={require('./assets/img/100.png')}
+                                style={{width: 26, height: 26}}
+                                resizeMode="contain"
+                            />
+                        )
+                    },
                 }}/>
-        </Tab.Navigator>
+ </Tab.Navigator>
     );
 }
-
 const Stack = createStackNavigator();
-
 export default function App() {
     return (
         <>
@@ -106,22 +125,77 @@ export default function App() {
         <SafeAreaView style={{flex: 1, backgroundColor: "#D5E6EC"}}>
 
             <NavigationContainer>
-                <Stack.Navigator initialRouteName="Home">
+                <Stack.Navigator initialRouteName="NavigationBar">
                     <Stack.Screen
-                        name="Home"
-                        component={TabNavigationScreens}
+                        name="NavigationBar"
+                        component={NavigationBar}
                         options={{headerShown: false}}/>
-                    <Stack.Screen name="SetUp" component={SetUpView} />
-                    <Stack.Screen name="GoogleMap" component={GoogleMapView} />
-                    <Stack.Screen name="SetUpInline" component={SetUpInlineView} />
-                    <Stack.Screen name="SetUpComponents" component={SetUpComponentsView} />
-                    <Stack.Screen name="InformationPopulate" component={InformationPopulateView} />
-                    <Stack.Screen name="WeeklyConfirmWellbeing" component={WeeklyConfirmWellbeingView} />
-                    <Stack.Screen name="ReportForSharing" component={ReportForSharingView} />
-                    <Stack.Screen name="Nudge" component={NudgeView} />
-                    <Stack.Screen name="ActivitySupportMessage" component={ActivitySupportMessageView} />
-                    <Stack.Screen name="Tracking" component={TrackingView} />
-                    <Stack.Screen name="MessagesSent" component={MessagesSentView} />
+                    <Stack.Screen
+                        name="DementiaSupport1"
+                        component={DementiaSupport1}/>
+                    <Stack.Screen
+                        name="StartPassiveTrackingandReporting"
+                        component={StartPassiveTrackingandReporting}/>
+                    <Stack.Screen
+                        name="Informationtopopulatmessages"
+                        component={Informationtopopulatmessages}/>
+                    <Stack.Screen
+                        name="DementiaSupport2"
+                        component={DementiaSupport2}/>
+                    <Stack.Screen
+                        name="Dewis"
+                        component={Dewis}/>
+                    <Stack.Screen
+                        name="Torfaen"
+                        component={Torfaen}/>
+                    <Stack.Screen
+                        name="ABUB"
+                        component={ABUB}/>
+                    <Stack.Screen
+                        name="MessagesSent"
+                        component={MessagesSent}/>
+                    <Stack.Screen
+                        name="ReportforSharing"
+                        component={ReportforSharing}/>
+                    <Stack.Screen
+                        name="FriendofMine"
+                        component={FriendofMine}/>
+                    <Stack.Screen
+                        name="WellbeingNetwork"
+                        component={WellbeingNetwork}/>
+                    <Stack.Screen
+                        name="CarersTrust"
+                        component={CarersTrust}/>
+                    <Stack.Screen
+                        name="Wellbeingrating"
+                        component={Wellbeingrating}/>
+                    <Stack.Screen
+                        name="OutdoorstepsvWellbeing"
+                        component={OutdoorstepsvWellbeing}/>
+                    <Stack.Screen
+                        name="Reachout"
+                        component={Reachout}/>
+                    <Stack.Screen
+                        name="AgeConnect"
+                        component={AgeConnect}/>
+                    <Stack.Screen
+                        name="Headspace"
+                        component={Headspace}/>
+                    <Stack.Screen
+                        name="CareNetworkPage"
+                        component={CareNetworkPage}/>
+                    <Stack.Screen
+                        name="AutoPopulatedMesage1"
+                        component={AutoPopulatedMesage1}/>
+                    <Stack.Screen
+                        name="AutoPopulatedMesage2"
+                        component={AutoPopulatedMesage2}/>
+                    <Stack.Screen
+                        name="CallsmadevWellbeing"
+                        component={CallsmadevWellbeing}/>
+                    <Stack.Screen
+                        name="SetUp"
+                        component={SetUp}/>
                 </Stack.Navigator>
             </NavigationContainer>
 

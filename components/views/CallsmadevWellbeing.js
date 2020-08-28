@@ -2,15 +2,15 @@ import { View, ScrollView } from "react-native"
 import React, { Component } from "react"
 import base from "../../assets/baseStyle"
 import P from '../reusables/P'
+import Button from '../reusables/Button'
 import { StatusBar } from 'expo-status-bar'
-import ImageButton from "../reusables/ImageButton"
 import {
   LineChart,
   BarChart,
   PieChart
 } from "react-native-chart-kit"
 
-class ReportforSharing extends Component {render() {
+class CallsmadevWellbeing extends Component {render() {
 const LINE_CHART_DATA = {
             labels: ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun."],
             datasets: [
@@ -34,31 +34,29 @@ const LINE_CHART_DATA = {
         }
         return (
             <ScrollView style={{flex: 1, padding: 0, backgroundColor: "rgba(16,40,123,1.0)"}}>
-<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 27}}>
-<P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Well-being Diary </P>
-<ImageButton
-onPress={() => this.props.navigation.navigate('Reachout')}
-style={{padding: 10}}
-imageStyle={{width: 24, height: 31}}
-imageSrc={require('../../assets/img/65.png')}/>
+<View style={{marginTop: 7,marginLeft: 19, marginRight: 50}}>
+<P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Well-being v Contact</P>
+</View>
+<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 22}}>
+<Button
+   style={{backgroundColor:"rgba(196,196,196,1.0)", marginTop: base.margin, minWidth: 154, borderRadius: 5.0}}
+   textStyle={{color: "rgba(0,0,0,1.0)", fontSize: 17.0}}
+>Well-being v Contact</Button>
+<Button
+onPress={() => this.props.navigation.navigate('OutdoorstepsvWellbeing')}
+   style={{backgroundColor:"rgba(26,154,169,1.0)", marginTop: base.margin, minWidth: 167, borderRadius: 5.0}}
+   textStyle={{color: "rgba(0,0,0,1.0)", fontSize: 17.0}}
+>Well-Being v Steps</Button>
  </View>
-<View style={{marginTop: 57,marginLeft: 31, marginRight: 20}}>
+<View style={{marginTop: 3,marginLeft: 70, marginRight: 56}}>
+<P style={{fontSize: 13.0, fontWeight: '700', color: "rgba(0,0,0,1.0)", textAlign: 'center', flex: 1 }}>Calls made and Well-being</P>
+</View>
+<View style={{marginTop: 13,marginLeft: 18, marginRight: 64}}>
 <View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10, marginBottom: 10}}>
 <LineChart
 data={LINE_CHART_DATA}
-width={363}
-height={229}
-chartConfig={LINE_CHART_CONFIG}
-bezier/>
-</View>
-
-</View>
-<View style={{marginTop: 13,marginLeft: 31, marginRight: 24}}>
-<View style={{padding: 10, backgroundColor: "#ffffff", borderRadius: 10, marginBottom: 10}}>
-<LineChart
-data={LINE_CHART_DATA}
-width={359}
-height={272}
+width={332}
+height={394}
 chartConfig={LINE_CHART_CONFIG}
 bezier/>
 </View>
@@ -68,4 +66,4 @@ bezier/>
         )
     }
 }
-export default ReportforSharing
+export default CallsmadevWellbeing
