@@ -13,7 +13,7 @@ class AutoPopulatedMesage2 extends Component {render() {
 <P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Actvity Support Message</P>
 </View>
 <View style={{marginTop: 20,marginLeft: 12, marginRight: 7}}>
-<View style={{borderRadius: 32.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(0,0,0,1.0)", borderWidth: 1.0}}>
+<View style={{borderRadius: 32.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(0,0,0,1.0)", borderWidth: 1.0}}>
 <View style={{flexDirection: 'row', marginTop: 49, justifyContent: "center"}}>
 <P style={{fontSize: 24.0, fontWeight: '400', color: "rgba(0,0,0,1.0)", textAlign: 'left', flex: 1 }}>You appear to be actively interested in </P>
 </View>

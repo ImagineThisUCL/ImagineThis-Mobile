@@ -14,7 +14,7 @@ class Informationtopopulatmessages extends Component {render() {
 <P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Set up your primary care network  text messaging template on the next three screens.  {"\n"}Do this initially with your carer support worker.  Once saved you can change these at any time{"\n"}{"\n"}Who do like to talk to?</P>
 </View>
 <View style={{marginTop: 16,marginLeft: 8, marginRight: 14}}>
-<View style={{borderRadius: 18.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(13,17,57,1.0)", borderWidth: 1.0}}>
+<View style={{borderRadius: 18.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(13,17,57,1.0)", borderWidth: 1.0}}>
 <View style={{flexDirection: 'row', marginTop: 32, justifyContent: "center"}}>
 <InputField
      label='Name :'
@@ -44,13 +44,12 @@ class Informationtopopulatmessages extends Component {render() {
 </View>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/58.png')}
+source={require('../../assets/img/74.png')}
 style={{width: 19, height: 25}}
 />
 </View>
 </View>
-<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 4}}>
-<View style={{flex: 8}}>
+<View style={{flexDirection: 'row', marginTop: 4, justifyContent: "center"}}>
 <InputField
      label='Name :'
      labelStyle={{color: "rgba(113,113,113,1.0)", marginBottom: 5}}
@@ -63,14 +62,8 @@ style={{width: 19, height: 25}}
            backgroundColor: "rgba(255,255,255,1.0)",}}
 />
 </View>
-<View style={{flex: 1}}>
-<Image
-source={require('../../assets/img/59.png')}
-style={{width: 19, height: 27}}
-/>
-</View>
-</View>
-<View style={{flexDirection: 'row', marginTop: 0, justifyContent: "center"}}>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 5}}>
+<View style={{flex: 7}}>
 <InputField
      label='Contact no :'
      labelStyle={{color: "rgba(113,113,113,1.0)", marginBottom: 5}}
@@ -82,6 +75,13 @@ style={{width: 19, height: 27}}
            paddingHorizontal: 10,
            backgroundColor: "rgba(255,255,255,1.0)",}}
 />
+</View>
+<View style={{flex: 1}}>
+<Image
+source={require('../../assets/img/75.png')}
+style={{width: 19, height: 27}}
+/>
+</View>
 </View>
 <View style={{flexDirection: 'row', marginTop: 2, justifyContent: "center"}}>
 <InputField
@@ -97,12 +97,6 @@ style={{width: 19, height: 27}}
 />
 </View>
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 3}}>
-<View style={{flex: 1}}>
-<ImageButton
-style={{padding: 10}}
-imageStyle={{width: 29, height: 29}}
-imageSrc={require('../../assets/img/60.png')}/>
-</View>
 <View style={{flex: 7}}>
 <InputField
      label='Contact no :'
@@ -118,10 +112,16 @@ imageSrc={require('../../assets/img/60.png')}/>
 </View>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/61.png')}
+source={require('../../assets/img/76.png')}
 style={{width: 19, height: 27}}
 />
 </View>
+</View>
+<View style={{flexDirection: 'row', marginTop: 9}}>
+<ImageButton
+style={{padding: 10}}
+imageStyle={{width: 29, height: 29}}
+imageSrc={require('../../assets/img/77.png')}/>
 </View>
 </View>
 

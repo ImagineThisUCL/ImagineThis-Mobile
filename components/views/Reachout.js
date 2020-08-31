@@ -12,7 +12,7 @@ class Reachout extends Component {render() {
 <P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Personal nudge</P>
 </View>
 <View style={{marginTop: 23,marginLeft: 11, marginRight: 11}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 26, justifyContent: "center"}}>
 <P style={{fontSize: 24.0, fontWeight: '400', color: "rgba(0,0,0,1.0)", textAlign: 'center', flex: 1 }}>Let your care network know how you are!</P>
 </View>
@@ -22,14 +22,14 @@ class Reachout extends Component {render() {
 onPress={() => this.props.navigation.navigate('AutoPopulatedMesage1')}
 style={{padding: 10}}
 imageStyle={{width: 50, height: 49}}
-imageSrc={require('../../assets/img/88.png')}/>
+imageSrc={require('../../assets/img/105.png')}/>
 </View>
 <View style={{flex: 1}}>
 <ImageButton
 onPress={() => this.props.navigation.navigate('NavigationBar', {screen:'WellbeingNetwork'})}
 style={{padding: 10}}
 imageStyle={{width: 50, height: 47}}
-imageSrc={require('../../assets/img/89.png')}/>
+imageSrc={require('../../assets/img/106.png')}/>
 </View>
 </View>
 </View>

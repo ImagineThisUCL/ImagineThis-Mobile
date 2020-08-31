@@ -13,7 +13,7 @@ class HomePageWeekly extends Component {render() {
 <P style={{fontSize: 27.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Welcome</P>
 </View>
 <View style={{marginTop: 47,marginLeft: 11, marginRight: 11}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 1, justifyContent: "center"}}>
 <P style={{fontSize: 22.0, fontWeight: '700', color: "rgba(0,0,0,1.0)", textAlign: 'left', flex: 1 }}>Well-being Score: Last Week</P>
 </View>
@@ -21,26 +21,35 @@ class HomePageWeekly extends Component {render() {
 
 </View>
 <View style={{marginTop: 11,marginLeft: 11, marginRight: 11}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 9}}>
 <View style={{flex: 4}}>
 <Button
+onPress={() => this.props.navigation.navigate('WeeklyConfirmWellbeing')}
    style={{backgroundColor:"rgba(15,9,78,1.0)", marginTop: base.margin, minWidth: 176}}
    textStyle={{color: "rgba(255,255,255,1.0)", fontSize: 40.0}}
 circleDiameter={176}>7</Button>
 </View>
 <View style={{flex: 1}}>
 <ImageButton
+onPress={() => this.props.navigation.navigate('Reachout')}
 style={{padding: 10}}
 imageStyle={{width: 31, height: 37}}
-imageSrc={require('../../assets/img/92.png')}/>
+imageSrc={require('../../assets/img/109.png')}/>
 </View>
+</View>
+<View style={{flexDirection: 'row', marginTop: 0, justifyContent: "flex-end"}}>
+<ImageButton
+onPress={() => this.props.navigation.navigate('WellbeingbyActivity')}
+style={{padding: 10}}
+imageStyle={{width: 36, height: 36}}
+imageSrc={require('../../assets/img/110.png')}/>
 </View>
 </View>
 
 </View>
 <View style={{marginTop: 23,marginLeft: 11, marginRight: 11}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 0, justifyContent: "center"}}>
 <P style={{fontSize: 22.0, fontWeight: '700', color: "rgba(0,0,0,1.0)", textAlign: 'left', flex: 1 }}>Activity since last Sunday </P>
 </View>
@@ -48,11 +57,11 @@ imageSrc={require('../../assets/img/92.png')}/>
 
 </View>
 <View style={{marginTop: 1,marginLeft: 11, marginRight: 11}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 14}}>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/93.png')}
+source={require('../../assets/img/111.png')}
 style={{width: 32, height: 46}}
 />
 </View>
@@ -66,7 +75,7 @@ style={{width: 32, height: 46}}
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 26}}>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/94.png')}
+source={require('../../assets/img/112.png')}
 style={{width: 39, height: 40}}
 />
 </View>
@@ -80,7 +89,7 @@ style={{width: 39, height: 40}}
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 27}}>
 <View style={{flex: 1}}>
 <Image
-source={require('../../assets/img/95.png')}
+source={require('../../assets/img/113.png')}
 style={{width: 43, height: 40}}
 />
 </View>

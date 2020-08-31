@@ -13,7 +13,7 @@ class CareNetworkPage extends Component {render() {
 <P style={{fontSize: 25.0, fontWeight: '500', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>What activities do you like ?</P>
 </View>
 <View style={{marginTop: 23,marginLeft: 16, marginRight: 12}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(13,18,57,1.0)", borderWidth: 1.0}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)",borderColor: "rgba(13,18,57,1.0)", borderWidth: 1.0}}>
 <View style={{flexDirection: 'row', marginTop: 13, justifyContent: "center"}}>
 <InputField
      label='Activity :'

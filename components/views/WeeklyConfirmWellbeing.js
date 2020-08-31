@@ -13,7 +13,8 @@ class WeeklyConfirmWellbeing extends Component {render() {
 <P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Over the past 7 days, rate how well you have have felt. </P>
 </View>
 <View style={{marginTop: 9,marginLeft: 8, marginRight: 14}}>
-<View style={{padding: 10, backgroundColor: "rgba(255,255,255,1.0)", borderRadius: 10.0}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{flexDirection: 'row', marginTop: 21, justifyContent: "center"}}>
                     <CustomSlider
                         minimumTrackTintColor="#A4C8FF"
                         maximumTrackTintColor="#1A9AA9"
@@ -24,11 +25,13 @@ class WeeklyConfirmWellbeing extends Component {render() {
                         thumbTintColor="#3A334F"
                         labelStyle={{color: "#C4C4C4", fontWeight: "bold", fontSize: 21}}
                         valueLabelStyle={{color: "#1A9AA9", fontWeight: "bold", fontSize: 21}}/>
-                </View>
+
+</View>
+</View>
 
 </View>
 <View style={{marginTop: 9,marginLeft: 11, marginRight: 11}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 11, justifyContent: "center"}}>
 <P style={{fontSize: 24.0, fontWeight: '400', color: "rgba(0,0,0,1.0)", textAlign: 'left', flex: 1 }}>As needed move the Black Button up or down the scale to log how you well you feel.{"\n"}{"\n"}On the scale  (0=lowest score, {"\n"}10=highest score).{"\n"}{"\n"}Then click SAVE. This will create a diary entry in your App{"\n"}</P>
 </View>

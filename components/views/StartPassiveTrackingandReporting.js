@@ -13,9 +13,10 @@ class StartPassiveTrackingandReporting extends Component {render() {
 <P style={{fontSize: 24.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Initially, please set up your data sharing preferences with a carer support worker</P>
 </View>
 <View style={{marginTop: 29,marginLeft: 8, marginRight: 14}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 13, justifyContent: "center"}}>
 <Button
+onPress={() => this.props.navigation.navigate('NavigationBar', {screen:'HomePageWeekly'})}
    style={{backgroundColor:"rgba(15,9,78,1.0)", marginTop: base.margin, minWidth: 99}}
    textStyle={{color: "rgba(255,255,255,1.0)", fontSize: 18.0}}
 circleDiameter={99}>Start 
@@ -28,17 +29,19 @@ tracking</Button>
 
 </View>
 <View style={{marginTop: 8,marginLeft: 8, marginRight: 14}}>
-<View style={{borderRadius: 20.0, padding: 10, backgroundColor: "rgba(0,0,0,0)",borderColor: "rgba(180,179,185,1.0)", borderWidth: 3.0}}>
+<View style={{borderRadius: 20.0, padding: 10, flex: 1, backgroundColor: "rgba(0,0,0,0)",borderColor: "rgba(180,179,185,1.0)", borderWidth: 3.0}}>
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 7}}>
 <View style={{flex: 6}}>
 <P style={{fontSize: 14.0, fontWeight: '600', color: "rgba(255,255,255,1.0)", textAlign: 'center', flex: 1 }}> Click the OK button below to consent to the creation of a map that enables you and other app users to understand what support activties help people in your area.  By consenting you will not be sharing personally identifiable data.  All data used to create the map will be annonymised to protect your privacy.</P>
 </View>
 <View style={{flex: 2}}>
 <Image
-source={require('../../assets/img/67.png')}
+source={require('../../assets/img/83.png')}
 style={{width: 114, height: 169}}
 />
 </View>
+</View>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 8}}>
 <View style={{flex: 1}}>
 <P style={{fontSize: 18.0, fontWeight: '600', color: "rgba(255,253,253,1.0)", textAlign: 'center', flex: 1 }}>OK?</P>
 </View>

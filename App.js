@@ -6,10 +6,12 @@ import { SafeAreaView, Image } from 'react-native';
 import MessagesSent from "./components/views/MessagesSent"
 import ReportforSharing from "./components/views/ReportforSharing"
 import WellbeingNetwork from "./components/views/WellbeingNetwork"
-import WellbeingbyActivity from "./components/views/WellbeingbyActivity"
+import HomePageWeekly from "./components/views/HomePageWeekly"
 import SetUp from "./components/views/SetUp"
+import WeeklyConfirmWellbeing from "./components/views/WeeklyConfirmWellbeing"
 import DementiaSupport1 from "./components/views/DementiaSupport1"
 import StartPassiveTrackingandReporting from "./components/views/StartPassiveTrackingandReporting"
+import WellbeingbyActivity from "./components/views/WellbeingbyActivity"
 import Informationtopopulatmessages from "./components/views/Informationtopopulatmessages"
 import DementiaSupport2 from "./components/views/DementiaSupport2"
 import Dewis from "./components/views/Dewis"
@@ -51,7 +53,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/96.png')}
+                                source={require('./assets/img/114.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -65,7 +67,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/97.png')}
+                                source={require('./assets/img/115.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -74,12 +76,12 @@ function NavigationBar() {
                 }}/>
  <Tab.Screen
                 name="Home"
-                component={WellbeingbyActivity}
+                component={HomePageWeekly}
                 options={{
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/98.png')}
+                                source={require('./assets/img/116.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -93,7 +95,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/99.png')}
+                                source={require('./assets/img/117.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -107,7 +109,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/100.png')}
+                                source={require('./assets/img/118.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -131,11 +133,17 @@ export default function App() {
                         component={NavigationBar}
                         options={{headerShown: false}}/>
                     <Stack.Screen
+                        name="WeeklyConfirmWellbeing"
+                        component={WeeklyConfirmWellbeing}/>
+                    <Stack.Screen
                         name="DementiaSupport1"
                         component={DementiaSupport1}/>
                     <Stack.Screen
                         name="StartPassiveTrackingandReporting"
                         component={StartPassiveTrackingandReporting}/>
+                    <Stack.Screen
+                        name="WellbeingbyActivity"
+                        component={WellbeingbyActivity}/>
                     <Stack.Screen
                         name="Informationtopopulatmessages"
                         component={Informationtopopulatmessages}/>
@@ -152,17 +160,8 @@ export default function App() {
                         name="ABUB"
                         component={ABUB}/>
                     <Stack.Screen
-                        name="MessagesSent"
-                        component={MessagesSent}/>
-                    <Stack.Screen
-                        name="ReportforSharing"
-                        component={ReportforSharing}/>
-                    <Stack.Screen
                         name="FriendofMine"
                         component={FriendofMine}/>
-                    <Stack.Screen
-                        name="WellbeingNetwork"
-                        component={WellbeingNetwork}/>
                     <Stack.Screen
                         name="CarersTrust"
                         component={CarersTrust}/>
@@ -193,9 +192,6 @@ export default function App() {
                     <Stack.Screen
                         name="CallsmadevWellbeing"
                         component={CallsmadevWellbeing}/>
-                    <Stack.Screen
-                        name="SetUp"
-                        component={SetUp}/>
                 </Stack.Navigator>
             </NavigationContainer>
 
