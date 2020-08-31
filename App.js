@@ -38,7 +38,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/12.png')}
+                                source={require('./assets/img/25.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -52,7 +52,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/13.png')}
+                                source={require('./assets/img/26.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -66,7 +66,7 @@ function NavigationBar() {
                     tabBarIcon: () => {
                         return (
                             <Image
-                                source={require('./assets/img/14.png')}
+                                source={require('./assets/img/27.png')}
                                 style={{width: 26, height: 26}}
                                 resizeMode="contain"
                             />
@@ -89,9 +89,6 @@ export default function App() {
                         name="NavigationBar"
                         component={NavigationBar}
                         options={{headerShown: false}}/>
-                    <Stack.Screen
-                        name="Browse"
-                        component={Browse}/>
                     <Stack.Screen
                         name="Register"
                         component={Register}/>

@@ -14,7 +14,7 @@ class Profile extends Component {render() {
 </View>
 <View style={{marginTop: 14,marginLeft: 127, marginRight: 127}}>
 <Image
-source={require('../../assets/img/6.png')}
+source={require('../../assets/img/17.png')}
 style={{width: 106, height: 106}}
 />
 </View>
@@ -35,7 +35,7 @@ onPress={() => this.props.navigation.navigate('LogIn')}
 <P style={{fontSize: 20.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Settings</P>
 </View>
 <View style={{marginTop: 5,marginLeft: 20, marginRight: 20}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 16}}>
 <View style={{flex: 7}}>
 <P style={{fontSize: 18.0, fontWeight: '400', color: "rgba(50,93,122,1.0)", textAlign: 'left', flex: 1 }}>Show notifications</P>

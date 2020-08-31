@@ -1,4 +1,4 @@
-import { View, ScrollView } from "react-native"
+import { View, ScrollView, Image } from "react-native"
 import React, { Component } from "react"
 import base from "../../assets/baseStyle"
 import P from '../reusables/P'
@@ -44,6 +44,79 @@ width={320}
 height={246}
 chartConfig={LINE_CHART_CONFIG}
 bezier/>
+</View>
+
+</View>
+<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 12}}>
+<Image
+source={require('../../assets/img/6.png')}
+style={{width: 51, height: 51}}
+/>
+<Image
+source={require('../../assets/img/7.png')}
+style={{width: 67, height: 67}}
+/>
+<Image
+source={require('../../assets/img/8.png')}
+style={{width: 65, height: 65}}
+/>
+ </View>
+<View style={{marginTop: 26,marginLeft: 30, marginRight: 34}}>
+<Image
+source={require('../../assets/img/9.png')}
+style={{width: 296, height: 1}}
+/>
+</View>
+<View style={{marginTop: 12,marginLeft: 20, marginRight: 20}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 10}}>
+<View style={{flex: 4}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(239,239,239,1.0)"}}>
+<View style={{flexDirection: 'row', marginTop: 9}}>
+<Image
+source={require('../../assets/img/10.png')}
+style={{width: 67, height: 67}}
+/>
+</View>
+</View>
+
+</View>
+<View style={{flex: 4}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(239,239,239,1.0)"}}>
+<View style={{flexDirection: 'row', marginTop: 17, justifyContent: "flex-end"}}>
+<Image
+source={require('../../assets/img/11.png')}
+style={{width: 51, height: 51}}
+/>
+</View>
+</View>
+
+</View>
+</View>
+<View style={{flexDirection: 'row', justifyContent: "space-between", marginTop: 16}}>
+<View style={{flex: 4}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(239,239,239,1.0)"}}>
+<View style={{flexDirection: 'row', marginTop: 9}}>
+<Image
+source={require('../../assets/img/12.png')}
+style={{width: 67, height: 67}}
+/>
+</View>
+</View>
+
+</View>
+<View style={{flex: 4}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(239,239,239,1.0)"}}>
+<View style={{flexDirection: 'row', marginTop: 17, justifyContent: "flex-end"}}>
+<Image
+source={require('../../assets/img/13.png')}
+style={{width: 51, height: 51}}
+/>
+</View>
+</View>
+
+</View>
+</View>
 </View>
 
 </View>

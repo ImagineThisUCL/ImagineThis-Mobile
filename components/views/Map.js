@@ -19,7 +19,7 @@ class Map extends Component {render() {
 </View>
 <View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 8}}>
 <Image
-source={require('../../assets/img/5.png')}
+source={require('../../assets/img/16.png')}
 style={{width: 106, height: 106}}
 />
 <P style={{fontSize: 20.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Jacob Everdoing</P>

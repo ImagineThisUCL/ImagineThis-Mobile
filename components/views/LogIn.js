@@ -11,7 +11,7 @@ class LogIn extends Component {render() {
             <ScrollView style={{flex: 1, padding: 0, backgroundColor: "rgba(109,190,41,1.0)"}}>
 <View style={{marginTop: 44,marginLeft: 101, marginRight: 101}}>
 <Image
-source={require('../../assets/img/3.png')}
+source={require('../../assets/img/14.png')}
 style={{width: 158, height: 145}}
 />
 </View>
@@ -50,7 +50,7 @@ onPress={() => this.props.navigation.navigate('NavigationBar', {screen:'Browse'}
 </View>
 <View style={{marginTop: 28,marginLeft: 10, marginRight: 10}}>
 <Image
-source={require('../../assets/img/4.png')}
+source={require('../../assets/img/15.png')}
 style={{width: 340, height: 2}}
 />
 </View>

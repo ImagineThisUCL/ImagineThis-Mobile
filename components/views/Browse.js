@@ -12,7 +12,7 @@ class Browse extends Component {render() {
 <P style={{fontSize: 23.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Browse jobs around you</P>
 </View>
 <View style={{marginTop: 20,marginLeft: 20, marginRight: 20}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 9, justifyContent: "center"}}>
 <P style={{fontSize: 20.0, fontWeight: '400', color: "rgba(50,93,122,1.0)", textAlign: 'left', flex: 1 }}>Mow 5 acres of my lawn</P>
 </View>
@@ -33,7 +33,7 @@ onPress={() => this.props.navigation.navigate('Detail')}
 
 </View>
 <View style={{marginTop: 14,marginLeft: 20, marginRight: 20}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 9, justifyContent: "center"}}>
 <P style={{fontSize: 20.0, fontWeight: '400', color: "rgba(50,93,122,1.0)", textAlign: 'left', flex: 1 }}>Mow 5 acres of my lawn</P>
 </View>
@@ -54,7 +54,7 @@ onPress={() => this.props.navigation.navigate('Detail')}
 
 </View>
 <View style={{marginTop: 14,marginLeft: 20, marginRight: 20}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 9, justifyContent: "center"}}>
 <P style={{fontSize: 20.0, fontWeight: '400', color: "rgba(50,93,122,1.0)", textAlign: 'left', flex: 1 }}>Mow 5 acres of my lawn</P>
 </View>
@@ -75,7 +75,7 @@ onPress={() => this.props.navigation.navigate('Detail')}
 
 </View>
 <View style={{marginTop: 14,marginLeft: 20, marginRight: 20}}>
-<View style={{borderRadius: 10.0, padding: 10, backgroundColor: "rgba(255,255,255,1.0)"}}>
+<View style={{borderRadius: 10.0, padding: 10, flex: 1, backgroundColor: "rgba(255,255,255,1.0)"}}>
 <View style={{flexDirection: 'row', marginTop: 9, justifyContent: "center"}}>
 <P style={{fontSize: 20.0, fontWeight: '400', color: "rgba(50,93,122,1.0)", textAlign: 'left', flex: 1 }}>Mow 5 acres of my lawn</P>
 </View>
