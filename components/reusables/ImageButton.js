@@ -17,6 +17,12 @@ const styles = StyleSheet.create({
     },
 })
 
+/*
+ * A clickable ImageButton with animated opacity upon touch
+ *
+ * (An alternative to IconButton with native animations)
+*/
+
 export default class Button extends Component {
     render() {
         return (

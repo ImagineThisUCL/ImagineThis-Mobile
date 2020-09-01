@@ -3,6 +3,10 @@ import propTypes from 'prop-types'
 import {Switch } from "react-native";
 import { color } from "react-native-reanimated";
 
+/*
+ * A switch/toggle button using native appearance
+*/
+
 export default class Toggle extends Component {
     constructor(props) {
         super(props);

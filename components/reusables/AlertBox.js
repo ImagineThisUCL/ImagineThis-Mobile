@@ -30,13 +30,15 @@ const styles = StyleSheet.create({
     },
 })
 
+/*
+ * A prototype of an alert box component - currently used for testing only.
+*/
 export default class AlertBox extends Component {
     render() {
 
         let contentTextStyle = [styles.contentTextStyle]
 
         return (
-
             <View>
                 <View style={styles.contentWrapper}>
                     <Text

@@ -26,6 +26,12 @@ const styles = StyleSheet.create({
     },
 })
 
+/*
+ * A custom implementation of a Dropdown that works together with 
+ * a modal selector - to make appearance and behaviour consistent
+ * across iOS and Android.
+*/
+
 export default class Dropdown extends Component {
     constructor(props) {
         super(props)

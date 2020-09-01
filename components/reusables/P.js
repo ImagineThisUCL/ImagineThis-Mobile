@@ -64,6 +64,12 @@ const styles = StyleSheet.create({
     }
 })
 
+/*
+ * Highly flexible text/paragraph component
+ *
+ * Contains many preset and customisable styles - simply add them as props
+*/
+
 export default class P extends Component {
     render() {
         let styleList = [styles.default]

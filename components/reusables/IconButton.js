@@ -11,6 +11,12 @@ const styles = StyleSheet.create({
     },
 })
 
+/*
+ * A clickable IconButton with native animations
+ *
+ * (An alternative to ImageButton with animated opacity)
+*/
+
 export default class IconButton extends Component {
     render() {
         let buttonStyleList = [styles.button]

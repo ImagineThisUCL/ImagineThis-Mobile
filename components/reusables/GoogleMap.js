@@ -19,6 +19,9 @@ const styles = StyleSheet.create({
     }
 })
 
+/*
+ * A wrapper component for a Google Map
+*/
 
 export default class GoogleMap extends Component {
     render() {
