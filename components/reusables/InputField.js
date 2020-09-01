@@ -7,7 +7,8 @@ import base from "../../assets/baseStyle"
 
 const styles = StyleSheet.create({
     input: {
-        flexDirection: "row"
+        flexDirection: "row",
+        minHeight: 40,
     },
 })
 
