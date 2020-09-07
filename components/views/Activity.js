@@ -47,7 +47,7 @@ bezier/>
 </View>
 
 </View>
-<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 12}}>
+<View style={{flexDirection: "row", justifyContent: "space-between", marginTop: 19}}>
 <Image
 source={require('../../assets/img/6.png')}
 style={{width: 51, height: 51}}
@@ -61,7 +61,7 @@ source={require('../../assets/img/8.png')}
 style={{width: 65, height: 65}}
 />
  </View>
-<View style={{marginTop: 26,marginLeft: 30, marginRight: 34}}>
+<View style={{marginTop: 19,marginLeft: 30, marginRight: 34}}>
 <Image
 source={require('../../assets/img/9.png')}
 style={{width: 296, height: 1}}
