@@ -12,10 +12,6 @@ const styles = StyleSheet.create({
     },
 })
 
-/*
- * A highly customisable Input Field component
-*/
-
 export default class InputField extends Component {
     render() {
 

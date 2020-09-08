@@ -32,9 +32,6 @@ const styles = StyleSheet.create({
     },
 })
 
-/*
- * A classic button with text inside
-*/
 export default class Button extends Component {
     render() {
         const {

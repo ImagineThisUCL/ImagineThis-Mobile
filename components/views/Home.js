@@ -1,65 +1,46 @@
-import { View, StyleSheet, Text } from "react-native"
+import { View, ScrollView, Image } from "react-native"
 import React, { Component } from "react"
-import Button from "../reusables/Button"
-import { StatusBar } from 'expo-status-bar'
-
 import base from "../../assets/baseStyle"
+import P from '../reusables/P'
+import { StatusBar } from 'expo-status-bar'
+import InputField from '../reusables/InputField'
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    text: {
-        marginBottom: 20,
-        fontSize: 20,
-        textAlign: "center"
-    }
-})
-
-class Home extends Component {
-    render() {
+class Home extends Component {render() {
         return (
-            <View style={styles.container}>
-                <StatusBar style="auto" />
-                <View>
-                    <Text style={styles.text}>
-                        Welcome to the home screen of our testing app.
-                    </Text>
-                </View>
-                <Button
-                    onPress={() => this.props.navigation.navigate('SetUp')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to SetUp screen
-                </Button>
-                <Button
-                    onPress={() => this.props.navigation.navigate('SetUpInline')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to SetUp screen with inline styles
-                </Button>
-                <Button
-                    onPress={() => this.props.navigation.navigate('SetUpComponents')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to SetUp screen with components
-                </Button>
-                <Button
-                    onPress={() => this.props.navigation.navigate('InformationPopulate')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to Information Populate View
-                </Button>
-                <Button
-                    onPress={() => this.props.navigation.navigate('Tracking')}
-                    style={{backgroundColor: "#5555ff", borderRadius: 25, marginTop: base.margin}}
-                    textStyle={{color: "#ffffff"}}>
-                    Go to Tracking View
-                </Button>
-            </View>
+            <ScrollView style={{flex: 1, padding: 0, backgroundColor: "rgba(27,27,27,1.0)"}}>
+<View style={{marginTop: 45,marginLeft: 24, marginRight: 62}}>
+<P style={{fontSize: 36.0, fontWeight: '700', color: "rgba(255,255,255,1.0)", textAlign: 'left', flex: 1 }}>Home</P>
+</View>
+<View style={{marginTop: 20,marginLeft: 24, marginRight: 27}}>
+<InputField
+     placeholder='Search...'
+     inputStyle={{color: "rgba(113,113,113,1.0)"}}
+     inputContainerStyle={{
+           borderWidth: 1,
+           borderRadius: 10.0,
+           paddingHorizontal: 10,
+           backgroundColor: "rgba(255,255,255,1.0)",}}
+/>
+</View>
+<View style={{marginTop: 20,marginLeft: 25, marginRight: 26}}>
+<Image
+source={require('../../assets/img/1.png')}
+style={{width: 309, height: 199}}
+/>
+</View>
+<View style={{marginTop: 21,marginLeft: 25, marginRight: 26}}>
+<Image
+source={require('../../assets/img/2.png')}
+style={{width: 309, height: 191}}
+/>
+</View>
+<View style={{marginTop: 26,marginLeft: 25, marginRight: 26}}>
+<Image
+source={require('../../assets/img/3.png')}
+style={{width: 309, height: 178}}
+/>
+</View>
+            </ScrollView>
         )
     }
 }
