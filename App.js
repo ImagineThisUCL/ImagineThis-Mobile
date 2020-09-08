@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { SafeAreaView, Image } from 'react-native';
 import MessagesSent from "./components/views/MessagesSent"
-import ReportforSharing from "./components/views/ReportforSharing"
+import ReportforSharing from "./components/views/ReportForSharing"
 import WellbeingNetwork from "./components/views/WellbeingNetwork"
 import HomePageWeekly from "./components/views/HomePageWeekly"
 import SetUp from "./components/views/SetUp"
