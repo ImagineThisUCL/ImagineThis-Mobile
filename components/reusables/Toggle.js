@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import propTypes from 'prop-types'
-import {Switch } from "react-native";
-import { color } from "react-native-reanimated";
+import { Switch } from "react-native"
 
 export default class Toggle extends Component {
     constructor(props) {
